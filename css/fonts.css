@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Elena';
+    src:url('./fonts/Elena/ElenaRegular.eot');
+    src:url('./fonts/Elena/ElenaRegular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Elena/ElenaRegular.woff2') format('woff2'),
+        url('./fonts/Elena/ElenaRegular.woff') format('woff'),
+        url('./fonts/Elena/ElenaRegular.ttf') format('truetype'),
+        url('./fonts/Elena/ElenaRegular.svg#ElenaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

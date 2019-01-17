@@ -1,0 +1,146 @@
+$display: 'Elena'
+@import palette
+
+=flexbox()
+  display: -webkit-box
+  display: -moz-box
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+
+
+=flex($values) 
+  -webkit-box-flex: $values
+  -moz-box-flex:  $values
+  -webkit-flex:  $values
+  -ms-flex:  $values
+  flex:  $values
+
+=bgbasics($img, $color)
+    background:
+        image: url($img)
+        color: $color
+        position: center
+        size: cover
+        repeat: no-repeat
+
+=vendor-transition($selection, $easing, $duration)
+    -webkit-transition: $selection $easing $duration
+    -moz-transition: $selection $easing $duration
+    -o-transition: $selection $easing $duration
+    transition: $selection $easing $duration
+
+=linear-gradient($selector, $gradient)
+    $selector: -moz-linear-gradient($gradient)
+    $selector: -webkit-gradient($gradient)
+    $selector: -webkit-linear-gradient($gradient)
+    $selector: -o-linear-gradient($gradient)
+    $selector: -ms-linear-gradient($gradient)
+
+=border($px, $style, $color)
+    border: $px $style $color
+
+%quartic-transition
+    +vendor-transition(all, cubic-bezier(0.075, 0.82, 0.165, 1), 0.4s)
+    
+%flex-center
+    display: flex
+    justify-content: center
+    align-items: center
+
+%lettering
+    color: #ffffff
+    font-weight: lighter
+
+%no-space
+    padding: 0
+    margin: 0
+
+%transition
+    -webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s
+    -moz-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s
+    -o-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s
+    
+html,
+body
+    overflow-x: hidden
+    margin: 0
+    padding: 0
+
+nav
+    position: absolute
+    .overlay
+        height: 100vh
+        padding: 1em
+        width: 0
+        @extend %quartic-transition
+    .navbutton
+        +bgbasics('', transparent)
+        +border(0px, solid, transparent)
+        padding: 1em
+        &:focus
+            outline: none
+        .icon
+            list-style-type: none
+            @extend %no-space
+            @extend %quartic-transition
+            .line
+                height: 0.3em
+                +bgbasics('', $blue)
+                margin: 0.3em 0
+                @extend %quartic-transition
+            @for $i from 1 through 4
+                .line:nth-child(#{$i})
+                    width: 0.3em + ($i/2)
+
+    .links
+        padding: 1em
+        .navigation
+            list-style-type: none
+            @extend %no-space
+            height: 100%
+            .navlink
+                transform: scale(0, 0)
+                opacity: 0
+                @extend %quartic-transition
+                @extend %no-space
+                margin: 2em 0
+                a
+                    text-decoration: none
+                    color: #ffffff
+                    font-size: 2em
+                    padding: 2em 0
+
+
+.toggled
+    .overlay
+        width: 20em
+        +bgbasics('', $blue)
+        @extend %quartic-transition
+        .navbutton
+            .icon
+                transform: rotate(540deg)
+                @extend %quartic-transition
+                .line
+                    +bgbasics('', white)
+                    width: 1.8em
+                    @extend %quartic-transition
+                    &:nth-child(1)
+                        transform: rotate(45deg) translate(0.42em, 0.42em)
+                    &:nth-child(2)
+                        opacity: 0
+                    &:nth-child(3)
+                        transform: rotate(-45deg) translate(0.42em, -0.42em)
+        .links
+            .navigation
+                .navlink
+                    opacity: 1
+                    transform: scale(1, 1)
+                    @extend %quartic-transition
+
+main
+    padding: 4em
+
+.title
+    font-family: $display

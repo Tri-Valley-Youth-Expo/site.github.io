@@ -5,11 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Tri-Valley Youth Expo II</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/fonts.css">
 </head>
 
 <body>
-
+    <nav>
+        <div class="overlay">
+            <button class="navbutton" onclick="toggleNav()">
+                <ul class="icon">
+                    <li class="line"></li>
+                    <li class="line"></li>
+                    <li class="line"></li>
+                </ul>
+            </button>
+            <div class="links">
+                <ul class="navigation">
+                    <li class="navlink"><a href="">Home</a></li>
+                    <li class="navlink"><a href="">FAQ</a></li>
+                    <li class="navlink"><a href="">Expo Hacks</a></li>
+                    <li class="navlink"><a href="">Battle of the Bands</a></li>
+                    <li class="navlink"><a href="">Sponsors</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="title">
+            <h1>Tri Valley Youth Expo II</h1>
+        </div>
+    </main>
+    <script>
+        function toggleNav() {
+            $("nav").toggleClass("toggled");
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
