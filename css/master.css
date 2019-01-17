@@ -1,14 +1,14 @@
 /* Coolors Exported Palette - coolors.co/ffd951-ff6060-8783d1-6ad8c2-2e5266 */
 /* HSL */
 /* RGB */
-.toggled .overlay .links .navigation .navlink, .toggled .overlay .navbutton .icon .line, .toggled .overlay .navbutton .icon, .toggled .overlay, nav .links .navigation .navlink, nav .navbutton .icon .line, nav .navbutton .icon, nav .overlay {
+.social .socialicon:hover, .social .socialicon, .toggled .overlay .links .navigation .navlink:hover, .toggled .overlay .links .navigation .navlink, .toggled .overlay, .toggled .navbutton .icon .line, .toggled .navbutton .icon, nav .links .navigation .navlink, nav .overlay, nav .navbutton .icon .line, nav .navbutton .icon {
   -webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
   -moz-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
   -o-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
   transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
 }
 
-nav .links .navigation .navlink, nav .links .navigation, nav .navbutton .icon {
+.title h1, nav .links .navigation .navlink, nav .links .navigation, nav .navbutton .icon {
   padding: 0;
   margin: 0;
 }
@@ -22,11 +22,7 @@ body {
 
 nav {
   position: absolute;
-}
-nav .overlay {
-  height: 100vh;
-  padding: 1em;
-  width: 0;
+  z-index: 3;
 }
 nav .navbutton {
   background-image: url("");
@@ -35,7 +31,9 @@ nav .navbutton {
   background-size: cover;
   background-repeat: no-repeat;
   border: 0px solid transparent;
-  padding: 1em;
+  padding: 2em;
+  position: absolute;
+  z-index: 5;
 }
 nav .navbutton:focus {
   outline: none;
@@ -46,7 +44,7 @@ nav .navbutton .icon {
 nav .navbutton .icon .line {
   height: 0.3em;
   background-image: url("");
-  background-color: #66a0ff;
+  background-color: white;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -64,11 +62,23 @@ nav .navbutton .icon .line:nth-child(3) {
 nav .navbutton .icon .line:nth-child(4) {
   width: 2.3em;
 }
+nav .overlay {
+  height: 100vh;
+  padding: 0 1em;
+  width: 3em;
+  background-image: url("");
+  background-color: rgba(102, 160, 255, 0.8);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 nav .links {
-  padding: 1em;
+  padding: 1em 1em;
 }
 nav .links .navigation {
   list-style-type: none;
+  margin-top: 10em;
+  margin-left: 4em;
   height: 100%;
 }
 nav .links .navigation .navlink {
@@ -80,21 +90,15 @@ nav .links .navigation .navlink a {
   text-decoration: none;
   color: #ffffff;
   font-size: 2em;
-  padding: 2em 0;
+  font-family: "Wavehaus";
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
-.toggled .overlay {
-  width: 20em;
-  background-image: url("");
-  background-color: #66a0ff;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.toggled .overlay .navbutton .icon {
+.toggled .navbutton .icon {
   transform: rotate(540deg);
 }
-.toggled .overlay .navbutton .icon .line {
+.toggled .navbutton .icon .line {
   background-image: url("");
   background-color: white;
   background-position: center;
@@ -102,26 +106,76 @@ nav .links .navigation .navlink a {
   background-repeat: no-repeat;
   width: 1.8em;
 }
-.toggled .overlay .navbutton .icon .line:nth-child(1) {
+.toggled .navbutton .icon .line:nth-child(1) {
   transform: rotate(45deg) translate(0.42em, 0.42em);
+  width: 1.8em;
 }
-.toggled .overlay .navbutton .icon .line:nth-child(2) {
+.toggled .navbutton .icon .line:nth-child(2) {
   opacity: 0;
 }
-.toggled .overlay .navbutton .icon .line:nth-child(3) {
+.toggled .navbutton .icon .line:nth-child(3) {
   transform: rotate(-45deg) translate(0.42em, -0.42em);
+}
+.toggled .overlay {
+  width: 100vw;
+  background-image: url("");
+  background-color: rgba(102, 160, 255, 0.8);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .toggled .overlay .links .navigation .navlink {
   opacity: 1;
   transform: scale(1, 1);
 }
+.toggled .overlay .links .navigation .navlink:hover {
+  letter-spacing: 0.2em;
+}
+.toggled .social {
+  transform: translateY(0em);
+  margin-left: 1.5em;
+}
+.toggled .social .socialicon {
+  margin: 0.5em;
+  padding: 0.5em;
+}
 
 main {
-  padding: 4em;
+  height: 100vh;
+  background-image: url("");
+  background-color: rgba(102, 160, 255, 0.7);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
 }
 
 .title {
-  font-family: "Elena";
+  padding: 4em;
+  transform: translateX(5em);
+}
+.title h1 {
+  font-family: "Canvas";
+  font-size: 8em;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 5em;
+}
+
+.social {
+  transform: translateY(-5em);
+  font-size: 2em;
+}
+.social .socialicon {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0.25em 0;
+  padding: 0.25em;
+  border-radius: 100px;
+}
+.social .socialicon:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 /*# sourceMappingURL=master.css.map */

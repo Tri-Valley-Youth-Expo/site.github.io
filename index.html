@@ -6,20 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tri-Valley Youth Expo II</title>
-    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/master.css">
 </head>
 
 <body>
     <nav>
+        <button class="navbutton" onclick="toggleNav()">
+            <ul class="icon">
+                <li class="line"></li>
+                <li class="line"></li>
+                <li class="line"></li>
+            </ul>
+        </button>
         <div class="overlay">
-            <button class="navbutton" onclick="toggleNav()">
-                <ul class="icon">
-                    <li class="line"></li>
-                    <li class="line"></li>
-                    <li class="line"></li>
-                </ul>
-            </button>
             <div class="links">
                 <ul class="navigation">
                     <li class="navlink"><a href="">Home</a></li>
@@ -28,6 +31,11 @@
                     <li class="navlink"><a href="">Battle of the Bands</a></li>
                     <li class="navlink"><a href="">Sponsors</a></li>
                 </ul>
+            </div>
+            <div class="social">
+                <a href="" class="socialicon fab fa-facebook"></a>
+                <a href="" class="socialicon fab fa-instagram"></a>
+                <a href="" class="socialicon fab fa-twitter"></a>
             </div>
         </div>
     </nav>

@@ -1,5 +1,6 @@
-$display: 'Elena'
 @import palette
+$display: 'Canvas'
+$regfont: 'Wavehaus'
 
 =flexbox()
   display: -webkit-box
@@ -70,15 +71,13 @@ body
 
 nav
     position: absolute
-    .overlay
-        height: 100vh
-        padding: 1em
-        width: 0
-        @extend %quartic-transition
+    z-index: 3
     .navbutton
         +bgbasics('', transparent)
         +border(0px, solid, transparent)
-        padding: 1em
+        padding: 2em
+        position: absolute
+        z-index: 5
         &:focus
             outline: none
         .icon
@@ -87,18 +86,26 @@ nav
             @extend %quartic-transition
             .line
                 height: 0.3em
-                +bgbasics('', $blue)
+                +bgbasics('', white)
                 margin: 0.3em 0
                 @extend %quartic-transition
             @for $i from 1 through 4
                 .line:nth-child(#{$i})
                     width: 0.3em + ($i/2)
+    .overlay
+        height: 100vh
+        padding: 0 1em
+        width: 3em
+        +bgbasics('', $transblue2)
+        @extend %quartic-transition
 
     .links
-        padding: 1em
+        padding: 1em 1em
         .navigation
             list-style-type: none
             @extend %no-space
+            margin-top: 10em
+            margin-left: 4em
             height: 100%
             .navlink
                 transform: scale(0, 0)
@@ -110,37 +117,76 @@ nav
                     text-decoration: none
                     color: #ffffff
                     font-size: 2em
-                    padding: 2em 0
+                    font-family: $regfont
+                    font-weight: 800
+                    text-transform: uppercase
 
 
 .toggled
-    .overlay
-        width: 20em
-        +bgbasics('', $blue)
-        @extend %quartic-transition
-        .navbutton
-            .icon
-                transform: rotate(540deg)
+    .navbutton
+        .icon
+            transform: rotate(540deg)
+            @extend %quartic-transition
+            .line
+                +bgbasics('', white)
+                width: 1.8em
                 @extend %quartic-transition
-                .line
-                    +bgbasics('', white)
+                &:nth-child(1)
+                    transform: rotate(45deg) translate(0.42em, 0.42em)
                     width: 1.8em
-                    @extend %quartic-transition
-                    &:nth-child(1)
-                        transform: rotate(45deg) translate(0.42em, 0.42em)
-                    &:nth-child(2)
-                        opacity: 0
-                    &:nth-child(3)
-                        transform: rotate(-45deg) translate(0.42em, -0.42em)
+                &:nth-child(2)
+                    opacity: 0
+                &:nth-child(3)
+                    transform: rotate(-45deg) translate(0.42em, -0.42em)
+    .overlay
+        width: 100vw
+        +bgbasics('', $transblue2)
+        @extend %quartic-transition
         .links
             .navigation
                 .navlink
                     opacity: 1
                     transform: scale(1, 1)
                     @extend %quartic-transition
+                    &:hover
+                        letter-spacing: 0.2em
+                        @extend %quartic-transition
+
+    .social
+        transform: translateY(0em)
+        margin-left: 1.5em
+        .socialicon
+            margin: 0.5em
+            padding: 0.5em
 
 main
-    padding: 4em
+    height: 100vh
+    +bgbasics('', $transblue3)
+    position: relative
+    z-index: 2
 
 .title
-    font-family: $display
+    padding: 4em
+    transform: translateX(5em)
+    h1
+        font-family: $display
+        font-size: 8em
+        text-transform: uppercase
+        @extend %no-space
+        color: #ffffff
+        width: 5em
+        @extend %no-space
+
+.social
+    transform: translateY(-5em)
+    font-size: 2em
+    .socialicon
+        color: #ffffff
+        text-decoration: none
+        margin: 0.25em 0
+        padding: 0.25em
+        border-radius: 100px
+        @extend %quartic-transition
+        &:hover
+            background: rgba(255, 255, 255, 0.2)
+            @extend %quartic-transition
