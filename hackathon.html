@@ -51,13 +51,18 @@
                     class="noletterspace">s</span></h1>
         </div>
     </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <script>
+        $(document).ready(function () {
+            if (screen.width <= 400) {
+                alert("For the best experience please visit our desktop site!");
+            }
+        });
         function toggleNav() {
             $("nav").toggleClass("toggled");
         }
     </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
