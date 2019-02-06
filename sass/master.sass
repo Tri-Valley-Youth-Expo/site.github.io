@@ -1,7 +1,6 @@
 @import palette
-$display: 'Canvas'
-$regfont: 'Wavehaus', sans-serif
-
+@import base
+// @import trig
 ::-webkit-scrollbar 
     width: 12px
 
@@ -15,80 +14,6 @@ $regfont: 'Wavehaus', sans-serif
     border: 2px solid $transblue5
     border-radius: 500px
     
-::selection
-    text-shadow: 10px 10px 10px $transblue3
-
-=flexbox()
-  display: -webkit-box
-  display: -moz-box
-  display: -ms-flexbox
-  display: -webkit-flex
-  display: flex
-
-=keyframes($name)
-  @-webkit-keyframes #{$name}
-    @content
-  @-moz-keyframes #{$name}
-    @content
-  @-ms-keyframes #{$name}
-    @content
-  @keyframes #{$name}
-    @content
-
-=flex($values) 
-  -webkit-box-flex: $values
-  -moz-box-flex:  $values
-  -webkit-flex:  $values
-  -ms-flex:  $values
-  flex:  $values
-
-=bgbasics($img, $color)
-    background:
-        color: $color
-        image: url($img)
-        position: center
-        size: cover
-        repeat: no-repeat
-
-=vendor-transition($selection, $easing, $duration)
-    -webkit-transition: $selection $easing $duration
-    -moz-transition: $selection $easing $duration
-    -o-transition: $selection $easing $duration
-    transition: $selection $easing $duration
-
-=linear-gradient($selector, $gradient)
-    $selector: -moz-linear-gradient($gradient)
-    $selector: -webkit-gradient($gradient)
-    $selector: -webkit-linear-gradient($gradient)
-    $selector: -o-linear-gradient($gradient)
-    $selector: -ms-linear-gradient($gradient)
-
-=border($px, $style, $color, $radius)
-    border: $px $style $color
-    border-radius: $radius
-
-%qtrans
-    +vendor-transition(all, cubic-bezier(0.075, 0.82, 0.165, 1), 0.4s)
-    
-%flex-center
-    display: flex
-    justify-content: center
-    align-items: center
-
-%lettering
-    color: #ffffff
-    font-weight: lighter
-
-%no-space
-    padding: 0
-    margin: 0
-
-%transition
-    -webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s
-    -moz-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s
-    -o-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s
-    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s
-    
 html,
 body
     overflow-x: hidden
@@ -98,8 +23,12 @@ body
     width: 100vw
 
 nav
+    position: fixed
+    z-index: 1
     +flex(1 1 3%)
     height: 100vh
+    +respond-to(handhelds)
+        +flex(1 1 2%)
 
 .overlay
     height: 100vh
@@ -126,6 +55,8 @@ button
     @extend %no-space
     padding: 2em 1em
     @extend %qtrans
+    +respond-to(handhelds)
+        padding: 1em 0.5em
 
 .links
     list-style: none
@@ -150,6 +81,8 @@ button
     &:hover, &:focus
         outline: none
         letter-spacing: 0.07em
+        text-decoration: none
+        color: #ffffff
         @extend %qtrans
 
 .navigation
@@ -158,6 +91,8 @@ button
     margin-left: 2em
     margin-top: 2em
     flex: 1
+    +respond-to(handhelds)
+        margin-top: -1em
 
 .line
     height: 0.3em
@@ -167,7 +102,11 @@ button
     @extend %qtrans
     @for $i from 0 through 3
         &:nth-child(#{$i})
-            width: 0.7em + ($i * (1/2))
+            width: 0.7em + ($i * 0.5)
+    +respond-to(handhelds)
+        @for $i from 0 through 3
+            &:nth-child(#{$i})
+                width: 0.3em + ($i * 0.5)
 
 .toggled
     .overlay
@@ -181,6 +120,8 @@ button
 
     .navigation
         width: 100%
+        +respond-to(handhelds)
+            width: 80%
 
     .social
         text-align: left
@@ -215,6 +156,10 @@ button
     text-align: center
     transform: translateY(-3em)
     @extend %qtrans
+    +respond-to(medium-screens)
+        transform: translateY(-5em)
+    +respond-to(handhelds)
+        transform: translateY(-2em)
 
 .socialicon
     display: block
@@ -226,10 +171,17 @@ button
     &:hover
         @extend %qtrans
         opacity: 0.5
+        color: #ffffff
+        text-decoration: none
+    +respond-to(handhelds)
+        font-size: 1.2em
 
 .front
-    +flexbox()
+    height: 100vh
+    width: 97%
+    left: 3%
     position: relative
+    +flexbox()
     z-index: 0
     +bgbasics('', $transblue5)
 
@@ -244,12 +196,11 @@ button
     @extend %no-space
     top: 0
     left: 0
-    +bgbasics('../assets/mtdiablo.jpg', transparent)
+    +bgbasics('../assets/ggbridge1.jpg', transparent)
     background-position: center
 
 .landing
     padding: 4em
-
 
 .expoheader
     color: #ffffff
@@ -260,15 +211,48 @@ button
     +flex(0 1 100%)
     letter-spacing: 1em
     text-shadow: 2px 2px 10px $transblue3
+    +respond-to(medium-screens)
+        font-size: 4em
+    +respond-to(handhelds)
+        font-size: 2em
 
 .noletterspace
     letter-spacing: 0
 
 .pagetitle
-    @extend %no-space
-    color: #ffffff
     font-family: $regfont
-    font-weight: bold
+    text-transform: uppercase
+    color: #ffffff
+    font-size: 2.5em
+    @extend %no-space
+    padding: 0.5em
+    +respond-to(handhelds)
+        font-size: 1.8em
 
 .pageheader
-    +bgbasics('', $blue)
+    width: 100%
+    left: 3em
+    background: linear-gradient(to top right, $transblue3, $blue)
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%)
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%)
+    position: fixed
+    +respond-to(handhelds)
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%)
+        clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%)
+
+
+.sponsorus
+    @extend %flex-center
+
+.logos
+    +border(1px, solid, $blue, 0)
+    +flexbox()
+    flex-wrap: wrap
+    justify-content: space-evenly
+    margin: 5em 10em
+
+.sponsor
+    +flexbox()
+    +flex(0 1 10%)
+    color: none
+    text-decoration: none
