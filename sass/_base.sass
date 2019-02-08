@@ -64,8 +64,20 @@ $break-large: 1000px
     $selector: -o-linear-gradient($gradient)
     $selector: -ms-linear-gradient($gradient)
 
-=border($px, $style, $color, $radius)
-    border: $px $style $color
+=vendor-selector($selector, $content)
+    -moz-#{$selector}: $content
+    -webkit-#{$selector}: $content
+    -o-#{$selector}: $content
+    $selector: $content
+
+=vendor-content($selector, $content)
+    $selector: -moz-#{$content}
+    $selector: -webkit-#{$content}
+    $selector: -o-#{$content}
+    $selector: $content
+
+=border($style, $radius)
+    border: $style
     border-radius: $radius
 
 @function get-tilted-height($angle) 
@@ -97,7 +109,7 @@ $break-large: 1000px
     +vendor-transition(all, cubic-bezier(0.075, 0.82, 0.165, 1), 0.4s)
     
 %flex-center
-    display: flex
+    +flexbox()
     justify-content: center
     align-items: center
 

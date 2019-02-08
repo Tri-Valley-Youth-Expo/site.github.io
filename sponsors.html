@@ -2,68 +2,65 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Tri-Valley Youth Expo II</title>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-	 integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-	 crossorigin="anonymous">
-	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/master.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tri-Valley Youth Expo II</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/master.css">
 </head>
 
 <body>
-	<nav>
-		<div class="overlay">
-			<button onclick="toggleNav()">
-				<ul class="icon">
-					<li class="line"></li>
-					<li class="line"></li>
-					<li class="line"></li>
-				</ul>
-			</button>
-			<div class="navigation">
-				<ul class="links">
-					<li><a onclick="toggleNav()" href="index.html" class="link">Home</a></li>
-					<li><a onclick="toggleNav()" href="hackathon.html" class="link">Expo
-							Hacks</a></li>
-					<li><a onclick="toggleNav()" href="botb.html" class="link">Battle
-							of
-							the Bands</a></li>
-					<li><a onclick="toggleNav()" href="sponsors.html" class="link">Sponsors</a></li>
-					<li><a onclick="toggleNav()" href="arts.html" class="link">Art</a></li>
-					<li><a onclick="toggleNav()" href="contact.html" class="link">Contact</a></li>
-				</ul>
-			</div>
-			<div class="social">
-				<a target="_blank" href="https://www.facebook.com/trivalleyexpo/" class="socialicon fab fa-facebook-f"></a>
-				<a target="_blank" href="https://twitter.com/tvyouthexpo" class="socialicon fab fa-twitter"></a>
-				<a target="_blank" href="https://www.instagram.com/trivalleyyouthexpo/"
-				 class="socialicon fab fa-instagram"></a>
-			</div>
-		</div>
-	</nav>
-	<main class="content sponsors">
-		<div class="pageheader">
-			<h1 class="pagetitle">Sponsor<span class="noletterspace">s</span></h1>
-		</div>
-		<div class="sponsorus">
-			<div class="logos">
-				<a class="sponsor" href="https://estimote.com/"><img src="assets/sponsors/Estimote/Estimote-Logo-Color-Horizontal.png"
-					 alt="Estimote-Logo-Color-Vertical"></a>
-				<a class="sponsor" href="https://estimote.com/"><img src="assets/sponsors/Estimote/Estimote-Logo-Color-Horizontal.png"
-					 alt="Estimote-Logo-Color-Vertical"></a>
-			</div>
-		</div>
-	</main>
-	<script>
-		function toggleNav() {
-			$("nav").toggleClass("toggled");
-		}
-	</script>
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	 crossorigin="anonymous"></script>
+    <nav>
+        <button onclick="toggleNav()">
+            <ul class="icon">
+                <li class="line"></li>
+                <li class="line"></li>
+                <li class="line"></li>
+            </ul>
+        </button>
+        <div class="nav">
+            <ul>
+                <li class="link"><a href="index.html">Home</a></li>
+                <li class="link"><a href="hackathon.html">Expo Hacks</a></li>
+                <li class="link"><a href="botb.html">Battle of the Bands</a></li>
+                <li class="link"><a href="art.html">Arts</a></li>
+                <li class="link"><a href="sponsors.html">Sponsors</a></li>
+                <li class="link"><a href="team.html">Meet the Team</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="Site">
+        <div class="pageheader">
+            <h2 class="pagetitle">Sponsors</h2>
+        </div>
+        <main>
+            <h2 class="comingsoon">
+                Coming soon!
+            </h2>
+            <h5 class="addendum">We'll add more content soon!</h5>
+        </main>
+    </div>
+    <footer>
+        <div class="social">
+            <a href="https://facebook.com/trivalleyexpo/" class="fab fa-facebook-f"></a>
+            <a href="https://twitter.com/tvyouthexpo" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com/trivalleyyouthexpo/" class="fab fa-instagram"></a>
+        </div>
+        <div class="contact">
+            <h3>Contact us at <a href="mailto:info@trivalleyyouthexpo.com">info@trivalleyyouthexpo.com</a></h3>
+        </div>
+    </footer>
+    <script>
+        function toggleNav() {
+            $("nav").toggleClass("toggled");
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
