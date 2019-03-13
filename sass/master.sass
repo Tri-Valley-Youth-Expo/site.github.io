@@ -242,6 +242,8 @@ footer
 
 .greeting
     padding: 0 4em
+    +respond-to(handhelds)
+        padding: 3em
     h1
         @extend %no-space
         color: $blue
@@ -252,6 +254,8 @@ footer
         line-height: 2em
         width: 50%
         color: #666666
+        +respond-to(handhelds)
+            width: 100%
 
 #about
     margin-top: 0
@@ -276,6 +280,9 @@ main
     margin-top: 8em
     width: 96%
     margin-left: 4%
+    +respond-to(handhelds)
+        margin-left: 0
+        width: 100%
 
 .actbuttons
     button
@@ -301,6 +308,8 @@ main
 
 .contentsection
     padding: 1em 4em
+    +respond-to(handhelds)
+        padding: 3em
 
 .secttitle
     color: $blue
@@ -310,10 +319,14 @@ main
 .question, .category, .tba
     font-size: 1.5em
     margin: 0.75em 0
+    +respond-to(handhelds)
+        font-size: 1.3em
 
 
 .answer
     font-size: 1.2em
+    +respond-to(handhelds)
+        font-size: 1em
 
 .catdes
     font-size: 1em

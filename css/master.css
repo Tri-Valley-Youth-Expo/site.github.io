@@ -378,6 +378,11 @@ footer .contact h3 a:hover {
 .greeting {
   padding: 0 4em;
 }
+@media only screen and (max-width: 512px) {
+  .greeting {
+    padding: 3em;
+  }
+}
 .greeting h1 {
   color: #66a0ff;
   font-family: "Wavehaus", sans-serif;
@@ -388,6 +393,11 @@ footer .contact h3 a:hover {
   line-height: 2em;
   width: 50%;
   color: #666666;
+}
+@media only screen and (max-width: 512px) {
+  .greeting h3 {
+    width: 100%;
+  }
 }
 
 #about {
@@ -418,6 +428,12 @@ main {
   margin-top: 8em;
   width: 96%;
   margin-left: 4%;
+}
+@media only screen and (max-width: 512px) {
+  main {
+    margin-left: 0;
+    width: 100%;
+  }
 }
 
 .actbuttons button {
@@ -453,6 +469,11 @@ main {
 .contentsection {
   padding: 1em 4em;
 }
+@media only screen and (max-width: 512px) {
+  .contentsection {
+    padding: 3em;
+  }
+}
 
 .secttitle {
   color: #66a0ff;
@@ -464,9 +485,19 @@ main {
   font-size: 1.5em;
   margin: 0.75em 0;
 }
+@media only screen and (max-width: 512px) {
+  .question, .category, .tba {
+    font-size: 1.3em;
+  }
+}
 
 .answer {
   font-size: 1.2em;
+}
+@media only screen and (max-width: 512px) {
+  .answer {
+    font-size: 1em;
+  }
 }
 
 .catdes {
