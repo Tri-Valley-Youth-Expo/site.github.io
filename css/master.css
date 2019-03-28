@@ -19,7 +19,7 @@ button {
   align-items: center;
 }
 
-.actbuttons .formbutton, .greeting h1, .addendum, .pageheader .pagetitle, .title, footer .contact h3, footer, .nav ul, button .icon, button, nav, .question, .answer, .category, .catdes, .tba {
+.greeting h1, .addendum, .pageheader .pagetitle, .title, footer .contact h3, footer, .nav ul, button .icon, button, nav, .question, .answer, .category, .catdes, .tba {
   padding: 0;
   margin: 0;
 }
@@ -437,8 +437,6 @@ main {
 }
 
 .actbuttons .formbutton {
-  display: inline-block;
-  width: 10em;
   background-color: #66a0ff;
   background-image: url("");
   background-position: center;
