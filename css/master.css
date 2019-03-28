@@ -2,7 +2,7 @@
 /* HSL */
 /* RGB */
 /* Alternate Colors */
-.genericlink:hover, .genericlink, .actbuttons button:hover, .actbuttons button, footer .contact h3 a:hover, footer .contact h3 a, footer .social a:hover, footer .social a, .toggled .nav ul .link, .toggled button, .toggled, .nav ul .link a:hover, .nav ul .link a, .nav ul .link, button, nav {
+.genericlink:hover, .genericlink, .actbuttons a:hover, .actbuttons a, footer .contact h3 a:hover, footer .contact h3 a, footer .social a:hover, footer .social a, .toggled .nav ul .link, .toggled button, .toggled, .nav ul .link a:hover, .nav ul .link a, .nav ul .link, button, nav {
   -webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
   -moz-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
   -o-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
@@ -19,7 +19,7 @@ button {
   align-items: center;
 }
 
-.actbuttons button, .greeting h1, .addendum, .pageheader .pagetitle, .title, footer .contact h3, footer, .nav ul, button .icon, button, nav, .question, .answer, .category, .catdes, .tba {
+.actbuttons a, .greeting h1, .addendum, .pageheader .pagetitle, .title, footer .contact h3, footer, .nav ul, button .icon, button, nav, .question, .answer, .category, .catdes, .tba {
   padding: 0;
   margin: 0;
 }
@@ -436,7 +436,7 @@ main {
   }
 }
 
-.actbuttons button {
+.actbuttons a {
   display: inline-block;
   width: 10em;
   background-color: #66a0ff;
@@ -444,26 +444,17 @@ main {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 1em;
-}
-.actbuttons button:hover {
-  background-color: rgba(102, 160, 255, 0.8);
-  background-image: url("");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.actbuttons button:nth-child(1) {
-  margin-left: 0;
-}
-.actbuttons button a {
+  margin: 1em 1em 1em 0em;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 1em 0.5em;
+  text-decoration: none;
   color: #ffffff;
   font-family: "Wavehaus", sans-serif;
-  font-weight: bold;
-  font-size: 1.2em;
-  text-decoration: none;
-  width: 100%;
-  height: 100%;
+  font-weight: 600;
+}
+.actbuttons a:hover {
+  opacity: 0.8;
 }
 
 .contentsection {

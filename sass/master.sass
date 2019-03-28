@@ -285,26 +285,23 @@ main
         width: 100%
 
 .actbuttons
-    button
+    a
         display: inline-block
         width: 10em
         +bgbasics('', $blue)
         @extend %no-space
-        margin: 1em
+        margin: 1em 1em 1em 0em
         @extend %qtrans
+        font-size: 1.2em
+        text-align: center
+        padding: 1em 0.5em
+        text-decoration: none
+        color: #ffffff
+        font-family: $regfont
+        font-weight: 600
         &:hover
-            +bgbasics('', $transblue2)
+            opacity: 0.8
             @extend %qtrans
-        &:nth-child(1)
-            margin-left: 0
-        a
-            color: #ffffff
-            font-family: $regfont
-            font-weight: bold
-            font-size: 1.2em
-            text-decoration: none
-            width: 100%
-            height: 100%
 
 .contentsection
     padding: 1em 4em
