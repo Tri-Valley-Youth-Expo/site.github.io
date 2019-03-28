@@ -437,15 +437,16 @@ main {
 }
 
 .actbuttons .formbutton {
+  display: inline-block;
   background-color: #66a0ff;
   background-image: url("");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 1em 1em 1em 0em;
   font-size: 1.2em;
   text-align: center;
-  padding: 1em 0.5em;
+  margin: 1em 1em 1em 0em;
+  padding: 1em 2em;
   text-decoration: none;
   color: #ffffff;
   font-family: "Wavehaus", sans-serif;
