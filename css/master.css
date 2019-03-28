@@ -2,7 +2,7 @@
 /* HSL */
 /* RGB */
 /* Alternate Colors */
-.genericlink:hover, .genericlink, .actbuttons a:hover, .actbuttons a, footer .contact h3 a:hover, footer .contact h3 a, footer .social a:hover, footer .social a, .toggled .nav ul .link, .toggled button, .toggled, .nav ul .link a:hover, .nav ul .link a, .nav ul .link, button, nav {
+.genericlink:hover, .genericlink, .actbuttons .formbutton:hover, .actbuttons .formbutton, footer .contact h3 a:hover, footer .contact h3 a, footer .social a:hover, footer .social a, .toggled .nav ul .link, .toggled button, .toggled, .nav ul .link a:hover, .nav ul .link a, .nav ul .link, button, nav {
   -webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
   -moz-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
   -o-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
@@ -19,7 +19,7 @@ button {
   align-items: center;
 }
 
-.actbuttons a, .greeting h1, .addendum, .pageheader .pagetitle, .title, footer .contact h3, footer, .nav ul, button .icon, button, nav, .question, .answer, .category, .catdes, .tba {
+.actbuttons .formbutton, .greeting h1, .addendum, .pageheader .pagetitle, .title, footer .contact h3, footer, .nav ul, button .icon, button, nav, .question, .answer, .category, .catdes, .tba {
   padding: 0;
   margin: 0;
 }
@@ -436,7 +436,7 @@ main {
   }
 }
 
-.actbuttons a {
+.actbuttons .formbutton {
   display: inline-block;
   width: 10em;
   background-color: #66a0ff;
@@ -453,7 +453,7 @@ main {
   font-family: "Wavehaus", sans-serif;
   font-weight: 600;
 }
-.actbuttons a:hover {
+.actbuttons .formbutton:hover {
   opacity: 0.8;
 }
 
