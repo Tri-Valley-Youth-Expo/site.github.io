@@ -107,6 +107,7 @@ button:hover {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 @media only screen and (max-width: 512px) {
   button {
