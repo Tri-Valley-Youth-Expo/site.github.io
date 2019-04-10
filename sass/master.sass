@@ -301,6 +301,9 @@ main
         &:hover
             opacity: 0.8
             @extend %qtrans
+        +respond-to(handhelds)
+            position: relative
+            z-index: 10
 
 .contentsection
     padding: 1em 4em
@@ -336,29 +339,40 @@ main
 
 .bandcard
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
-    margin: 4em
+    margin: 4em 7.5em
     +flexbox()
     .bandimg
         +flex(1 0 30%)
         padding: 2em
-        +bgbasics('../assets/ggbridge2.jpg', transparent)
+        margin: 2em
     .bandinfo
-        padding: 2em
+        padding: 2em 4em
         .bandname
             color: #666666
             font-family: $regfont
+            font-size: 1.2em
         .banddescription
             color: #666666
             font-family: $regfont
             font-weight: 600
+            font-size: 0.9em
             line-height: 2em
+
+.bandcard:nth-child(1) > .bandimg
+    +bgbasics('../assets/bands/thechefs.jpg', transparent)
+    background-size: 100%
+
+.bandcard:nth-child(2) > .bandimg
+    +bgbasics('../assets/bands/thesideproject.jpg', transparent)
+    background-size: 100%
 
 .bandsocial
     a
         color: $blue
         text-decoration: none
         font-size: 2em
-        margin: 1em
+        margin-right: 1.2em
+        margin-top: 0.5em
 
 .genericlink
     color: $transblue2
