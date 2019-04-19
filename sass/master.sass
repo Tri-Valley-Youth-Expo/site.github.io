@@ -23,6 +23,7 @@ body
     +flexbox()
     min-height: 100vh
     flex-direction: column
+    scroll-behavior: smooth
 
 .Site
     flex: 1
@@ -273,6 +274,8 @@ footer
         font-family: $regfont
         font-weight: bold
         font-size: 1.5em
+    #urgent
+        color: #ED1C24
 
 .noletterspace
     letter-spacing: 0
@@ -358,15 +361,15 @@ main
             font-size: 0.9em
             line-height: 2em
 
-.bandcard:nth-child(1) > .bandimg
+.bandcard:nth-child(2) > .bandimg
     +bgbasics('../assets/bands/thechefs.jpg', transparent)
     background-size: 100%
 
-.bandcard:nth-child(2) > .bandimg
+.bandcard:nth-child(3) > .bandimg
     +bgbasics('../assets/bands/thesideproject.jpg', transparent)
     background-size: 100%
 
-.bandcard:nth-child(3) > .bandimg
+.bandcard:nth-child(4) > .bandimg
     +bgbasics('../assets/bands/resky.png', transparent)
     background-size: 100%
 
@@ -417,7 +420,6 @@ main
 .artcase, .artsignup
     @extend %regtext
     margin: 1em 0
-    // +bgbasics('', #ffffff)
     text-shadow: 0 0 0 #ffffff
 
 .images
@@ -432,3 +434,61 @@ main
     @for $i from 1 through 5
         .image-#{$i}
             +imgstuff('../assets/art#{$i}.jpg')
+
+.red
+    color: rgba(237, 28, 36, 0.5)
+    text-decoration: none
+    animation-name: flash
+    animation-duration: 5s
+    animation-iteration-count: infinite
+
++keyframes(flash)
+    0% 
+        color: rgba(237, 28, 36, 1)
+    4.54% 
+        color: rgba(237, 28, 36, 0.1)
+    9.09% 
+        color: rgba(237, 28, 36, 0.2)
+    13.63% 
+        color: rgba(237, 28, 36, 0.3)
+    18.18% 
+        color: rgba(237, 28, 36, 0.4)
+    22.72% 
+        color: rgba(237, 28, 36, 0.5)
+    27.27%
+        color: rgba(237, 28, 36, 0.6)
+    31.82%
+        color: rgba(237, 28, 36, 0.7)
+    36.36% 
+        color: rgba(237, 28, 36, 0.8)
+    40.91% 
+        color: rgba(237, 28, 36, 0.9)
+    45.45% 
+        color: rgba(237, 28, 36, 1)
+    50% 
+        color: rgba(237, 28, 36, 0.9)
+    54.54% 
+        color: rgba(237, 28, 36, 0.8)
+    59.09% 
+        color: rgba(237, 28, 36, 0.8)
+    63.63% 
+        color: rgba(237, 28, 36, 0.7)
+    68.18% 
+        color: rgba(237, 28, 36, 0.6)
+    72.72% 
+        color: rgba(237, 28, 36, 0.5)
+    77.27% 
+        color: rgba(237, 28, 36, 0.4)
+    81.81% 
+        color: rgba(237, 28, 36, 0.3)
+    86.36% 
+        color: rgba(237, 28, 36, 0.2)
+    90.91% 
+        color: rgba(237, 28, 36, 0.1)
+    100% 
+        color: rgba(237, 28, 36, 1)
+
+.dates
+    padding: 1em
+    margin-left: 4em
+    @extend %regtext

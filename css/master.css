@@ -17,11 +17,11 @@ button {
   justify-content: center;
   align-items: center; }
 
-.question, .answer, .category, .catdes, .tba, .prizes li, .internstuff, .artcase, .artsignup, nav, button, button .icon, .nav ul, footer, footer .contact h3, .title, .pageheader .pagetitle, .addendum, .greeting h1, .prizes {
+.question, .answer, .category, .catdes, .tba, .prizes li, .internstuff, .artcase, .artsignup, .dates, nav, button, button .icon, .nav ul, footer, footer .contact h3, .title, .pageheader .pagetitle, .addendum, .greeting h1, .prizes {
   padding: 0;
   margin: 0; }
 
-.question, .answer, .category, .catdes, .tba, .prizes li, .internstuff, .artcase, .artsignup {
+.question, .answer, .category, .catdes, .tba, .prizes li, .internstuff, .artcase, .artsignup, .dates {
   font-family: "Wavehaus", sans-serif;
   color: #666666; }
 
@@ -48,7 +48,8 @@ body {
   display: -webkit-flex;
   display: flex;
   min-height: 100vh;
-  flex-direction: column; }
+  flex-direction: column;
+  scroll-behavior: smooth; }
 
 .Site {
   flex: 1; }
@@ -331,6 +332,8 @@ footer {
     font-family: "Wavehaus", sans-serif;
     font-weight: bold;
     font-size: 1.5em; }
+  #about #urgent {
+    color: #ED1C24; }
 
 .noletterspace {
   letter-spacing: 0; }
@@ -426,7 +429,7 @@ main {
       font-size: 0.9em;
       line-height: 2em; }
 
-.bandcard:nth-child(1) > .bandimg {
+.bandcard:nth-child(2) > .bandimg {
   background-color: transparent;
   background-image: url("../assets/bands/thechefs.jpg");
   background-position: center;
@@ -434,7 +437,7 @@ main {
   background-repeat: no-repeat;
   background-size: 100%; }
 
-.bandcard:nth-child(2) > .bandimg {
+.bandcard:nth-child(3) > .bandimg {
   background-color: transparent;
   background-image: url("../assets/bands/thesideproject.jpg");
   background-position: center;
@@ -442,7 +445,7 @@ main {
   background-repeat: no-repeat;
   background-size: 100%; }
 
-.bandcard:nth-child(3) > .bandimg {
+.bandcard:nth-child(4) > .bandimg {
   background-color: transparent;
   background-image: url("../assets/bands/resky.png");
   background-position: center;
@@ -540,5 +543,196 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     padding: 10em; }
+
+.red {
+  color: rgba(237, 28, 36, 0.5);
+  text-decoration: none;
+  animation-name: flash;
+  animation-duration: 5s;
+  animation-iteration-count: infinite; }
+
+@-webkit-keyframes flash {
+  0% {
+    color: #ed1c24; }
+  4.54% {
+    color: rgba(237, 28, 36, 0.1); }
+  9.09% {
+    color: rgba(237, 28, 36, 0.2); }
+  13.63% {
+    color: rgba(237, 28, 36, 0.3); }
+  18.18% {
+    color: rgba(237, 28, 36, 0.4); }
+  22.72% {
+    color: rgba(237, 28, 36, 0.5); }
+  27.27% {
+    color: rgba(237, 28, 36, 0.6); }
+  31.82% {
+    color: rgba(237, 28, 36, 0.7); }
+  36.36% {
+    color: rgba(237, 28, 36, 0.8); }
+  40.91% {
+    color: rgba(237, 28, 36, 0.9); }
+  45.45% {
+    color: #ed1c24; }
+  50% {
+    color: rgba(237, 28, 36, 0.9); }
+  54.54% {
+    color: rgba(237, 28, 36, 0.8); }
+  59.09% {
+    color: rgba(237, 28, 36, 0.8); }
+  63.63% {
+    color: rgba(237, 28, 36, 0.7); }
+  68.18% {
+    color: rgba(237, 28, 36, 0.6); }
+  72.72% {
+    color: rgba(237, 28, 36, 0.5); }
+  77.27% {
+    color: rgba(237, 28, 36, 0.4); }
+  81.81% {
+    color: rgba(237, 28, 36, 0.3); }
+  86.36% {
+    color: rgba(237, 28, 36, 0.2); }
+  90.91% {
+    color: rgba(237, 28, 36, 0.1); }
+  100% {
+    color: #ed1c24; } }
+@-moz-keyframes flash {
+  0% {
+    color: #ed1c24; }
+  4.54% {
+    color: rgba(237, 28, 36, 0.1); }
+  9.09% {
+    color: rgba(237, 28, 36, 0.2); }
+  13.63% {
+    color: rgba(237, 28, 36, 0.3); }
+  18.18% {
+    color: rgba(237, 28, 36, 0.4); }
+  22.72% {
+    color: rgba(237, 28, 36, 0.5); }
+  27.27% {
+    color: rgba(237, 28, 36, 0.6); }
+  31.82% {
+    color: rgba(237, 28, 36, 0.7); }
+  36.36% {
+    color: rgba(237, 28, 36, 0.8); }
+  40.91% {
+    color: rgba(237, 28, 36, 0.9); }
+  45.45% {
+    color: #ed1c24; }
+  50% {
+    color: rgba(237, 28, 36, 0.9); }
+  54.54% {
+    color: rgba(237, 28, 36, 0.8); }
+  59.09% {
+    color: rgba(237, 28, 36, 0.8); }
+  63.63% {
+    color: rgba(237, 28, 36, 0.7); }
+  68.18% {
+    color: rgba(237, 28, 36, 0.6); }
+  72.72% {
+    color: rgba(237, 28, 36, 0.5); }
+  77.27% {
+    color: rgba(237, 28, 36, 0.4); }
+  81.81% {
+    color: rgba(237, 28, 36, 0.3); }
+  86.36% {
+    color: rgba(237, 28, 36, 0.2); }
+  90.91% {
+    color: rgba(237, 28, 36, 0.1); }
+  100% {
+    color: #ed1c24; } }
+@-ms-keyframes flash {
+  0% {
+    color: #ed1c24; }
+  4.54% {
+    color: rgba(237, 28, 36, 0.1); }
+  9.09% {
+    color: rgba(237, 28, 36, 0.2); }
+  13.63% {
+    color: rgba(237, 28, 36, 0.3); }
+  18.18% {
+    color: rgba(237, 28, 36, 0.4); }
+  22.72% {
+    color: rgba(237, 28, 36, 0.5); }
+  27.27% {
+    color: rgba(237, 28, 36, 0.6); }
+  31.82% {
+    color: rgba(237, 28, 36, 0.7); }
+  36.36% {
+    color: rgba(237, 28, 36, 0.8); }
+  40.91% {
+    color: rgba(237, 28, 36, 0.9); }
+  45.45% {
+    color: #ed1c24; }
+  50% {
+    color: rgba(237, 28, 36, 0.9); }
+  54.54% {
+    color: rgba(237, 28, 36, 0.8); }
+  59.09% {
+    color: rgba(237, 28, 36, 0.8); }
+  63.63% {
+    color: rgba(237, 28, 36, 0.7); }
+  68.18% {
+    color: rgba(237, 28, 36, 0.6); }
+  72.72% {
+    color: rgba(237, 28, 36, 0.5); }
+  77.27% {
+    color: rgba(237, 28, 36, 0.4); }
+  81.81% {
+    color: rgba(237, 28, 36, 0.3); }
+  86.36% {
+    color: rgba(237, 28, 36, 0.2); }
+  90.91% {
+    color: rgba(237, 28, 36, 0.1); }
+  100% {
+    color: #ed1c24; } }
+@keyframes flash {
+  0% {
+    color: #ed1c24; }
+  4.54% {
+    color: rgba(237, 28, 36, 0.1); }
+  9.09% {
+    color: rgba(237, 28, 36, 0.2); }
+  13.63% {
+    color: rgba(237, 28, 36, 0.3); }
+  18.18% {
+    color: rgba(237, 28, 36, 0.4); }
+  22.72% {
+    color: rgba(237, 28, 36, 0.5); }
+  27.27% {
+    color: rgba(237, 28, 36, 0.6); }
+  31.82% {
+    color: rgba(237, 28, 36, 0.7); }
+  36.36% {
+    color: rgba(237, 28, 36, 0.8); }
+  40.91% {
+    color: rgba(237, 28, 36, 0.9); }
+  45.45% {
+    color: #ed1c24; }
+  50% {
+    color: rgba(237, 28, 36, 0.9); }
+  54.54% {
+    color: rgba(237, 28, 36, 0.8); }
+  59.09% {
+    color: rgba(237, 28, 36, 0.8); }
+  63.63% {
+    color: rgba(237, 28, 36, 0.7); }
+  68.18% {
+    color: rgba(237, 28, 36, 0.6); }
+  72.72% {
+    color: rgba(237, 28, 36, 0.5); }
+  77.27% {
+    color: rgba(237, 28, 36, 0.4); }
+  81.81% {
+    color: rgba(237, 28, 36, 0.3); }
+  86.36% {
+    color: rgba(237, 28, 36, 0.2); }
+  90.91% {
+    color: rgba(237, 28, 36, 0.1); }
+  100% {
+    color: #ed1c24; } }
+.dates {
+  padding: 1em;
+  margin-left: 4em; }
 
 /*# sourceMappingURL=master.css.map */
