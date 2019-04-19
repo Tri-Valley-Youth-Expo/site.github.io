@@ -2,12 +2,11 @@
 /* HSL */
 /* RGB */
 /* Alternate Colors */
-.genericlink:hover, .genericlink, .actbuttons .formbutton:hover, .actbuttons .formbutton, footer .contact h3 a:hover, footer .contact h3 a, footer .social a:hover, footer .social a, .toggled .nav ul .link, .toggled button, .toggled, .nav ul .link a:hover, .nav ul .link a, .nav ul .link, button, nav {
+nav, button, .nav ul .link, .nav ul .link a, .nav ul .link a:hover, .toggled, .toggled button, .toggled .nav ul .link, footer .social a, footer .social a:hover, footer .contact h3 a, footer .contact h3 a:hover, .actbuttons .formbutton, .actbuttons .formbutton:hover, .genericlink, .genericlink:hover {
   -webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
   -moz-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
   -o-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
-  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
-}
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s; }
 
 button {
   display: -webkit-box;
@@ -16,32 +15,26 @@ button {
   display: -webkit-flex;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
-.greeting h1, .addendum, .pageheader .pagetitle, .title, footer .contact h3, footer, .nav ul, button .icon, button, nav, .question, .answer, .category, .catdes, .tba {
+.question, .answer, .category, .catdes, .tba, .prizes li, .internstuff, .artcase, .artsignup, nav, button, button .icon, .nav ul, footer, footer .contact h3, .title, .pageheader .pagetitle, .addendum, .greeting h1, .prizes {
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 
-.question, .answer, .category, .catdes, .tba {
+.question, .answer, .category, .catdes, .tba, .prizes li, .internstuff, .artcase, .artsignup {
   font-family: "Wavehaus", sans-serif;
-  color: #666666;
-}
+  color: #666666; }
 
 ::-webkit-scrollbar {
-  width: 12px;
-}
+  width: 12px; }
 
 ::-webkit-scrollbar-track {
-  background: rgba(102, 160, 255, 0.5);
-}
+  background: rgba(102, 160, 255, 0.5); }
 
 ::-webkit-scrollbar-thumb {
   background: white;
   border: 2px solid rgba(102, 160, 255, 0.5);
-  border-radius: 500px;
-}
+  border-radius: 500px; }
 
 html,
 body {
@@ -55,12 +48,10 @@ body {
   display: -webkit-flex;
   display: flex;
   min-height: 100vh;
-  flex-direction: column;
-}
+  flex-direction: column; }
 
 .Site {
-  flex: 1;
-}
+  flex: 1; }
 
 nav {
   width: 4%;
@@ -73,19 +64,14 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
   border: 0px solid transparent;
-  border-radius: 0;
-}
-@media only screen and (max-width: 512px) {
-  nav {
-    width: 100%;
-    height: 6%;
-  }
-}
-@media only screen and (min-width: 512px) and (max-width: 1000px) {
-  nav {
-    width: 8%;
-  }
-}
+  border-radius: 0; }
+  @media only screen and (max-width: 512px) {
+    nav {
+      width: 100%;
+      height: 6%; } }
+  @media only screen and (min-width: 512px) and (max-width: 1000px) {
+    nav {
+      width: 8%; } }
 
 button {
   background-color: transparent;
@@ -96,135 +82,100 @@ button {
   border: 0px solid #ffffff;
   border-radius: 0;
   width: 100%;
-  height: 4vw;
-}
-button:focus {
-  outline: none;
-}
-button:hover {
-  background-color: #66a1ff;
-  background-image: url("");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  cursor: pointer;
-}
-@media only screen and (max-width: 512px) {
-  button {
-    margin-left: 1em;
-    height: 100%;
-    display: static;
-    justify-content: left;
-    align-items: center;
-  }
-}
-@media only screen and (min-width: 512px) and (max-width: 1000px) {
-  button {
-    margin-top: 1.5em;
-  }
-}
-button .icon {
-  list-style-type: none;
-}
-button .icon .line {
-  height: 0.3em;
-  margin: 0.3em 0;
-  background-color: #ffffff;
-  background-image: url("");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 0px solid transparent;
-  border-radius: 500px;
-}
-button .icon .line:nth-child(0) {
-  width: 0.7em;
-}
-button .icon .line:nth-child(1) {
-  width: 1.2em;
-}
-button .icon .line:nth-child(2) {
-  width: 1.7em;
-}
-button .icon .line:nth-child(3) {
-  width: 2.2em;
-}
+  height: 4vw; }
+  button:focus {
+    outline: none; }
+  button:hover {
+    background-color: #66a1ff;
+    background-image: url("");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer; }
+  @media only screen and (max-width: 512px) {
+    button {
+      margin-left: 1em;
+      height: 100%;
+      display: static;
+      justify-content: left;
+      align-items: center; } }
+  @media only screen and (min-width: 512px) and (max-width: 1000px) {
+    button {
+      margin-top: 1.5em; } }
+  button .icon {
+    list-style-type: none; }
+    button .icon .line {
+      height: 0.3em;
+      margin: 0.3em 0;
+      background-color: #ffffff;
+      background-image: url("");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 0px solid transparent;
+      border-radius: 500px; }
+      button .icon .line:nth-child(0) {
+        width: 0.7em; }
+      button .icon .line:nth-child(1) {
+        width: 1.2em; }
+      button .icon .line:nth-child(2) {
+        width: 1.7em; }
+      button .icon .line:nth-child(3) {
+        width: 2.2em; }
 
 .nav {
   width: 100%;
-  margin: 4em;
-}
-@media only screen and (max-width: 512px) {
-  .nav {
-    margin: 4em 1em;
-  }
-}
-.nav ul {
-  list-style-type: none;
-}
-.nav ul .link {
-  opacity: 0;
-  transform: scale(0, 0);
-  margin: 2em 0;
-}
-.nav ul .link a {
-  color: #ffffff;
-  text-decoration: none;
-  font-family: "Wavehaus", sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 2em;
-  padding: 1em;
-}
-.nav ul .link a:hover {
-  letter-spacing: 0.1em;
-}
-@media only screen and (max-width: 512px) {
-  .nav ul .link a {
-    font-size: 1.5em;
-  }
-}
+  margin: 4em; }
+  @media only screen and (max-width: 512px) {
+    .nav {
+      margin: 4em 1em; } }
+  .nav ul {
+    list-style-type: none; }
+    .nav ul .link {
+      opacity: 0;
+      transform: scale(0, 0);
+      margin: 2em 0; }
+      .nav ul .link a {
+        color: #ffffff;
+        text-decoration: none;
+        font-family: "Wavehaus", sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 2em;
+        padding: 1em; }
+        .nav ul .link a:hover {
+          letter-spacing: 0.1em; }
+        @media only screen and (max-width: 512px) {
+          .nav ul .link a {
+            font-size: 1.5em; } }
 
 .toggled {
-  width: 100%;
-}
-@media only screen and (max-width: 512px) {
-  .toggled {
-    height: 100%;
-  }
-}
-.toggled button {
-  width: 4%;
-}
-@media only screen and (max-width: 512px) {
+  width: 100%; }
+  @media only screen and (max-width: 512px) {
+    .toggled {
+      height: 100%; } }
   .toggled button {
-    height: 4vw;
-    margin: 1em;
-  }
-}
-@media only screen and (min-width: 512px) and (max-width: 1000px) {
-  .toggled button {
-    margin-left: 1.5em;
-  }
-}
-.toggled button .icon .line {
-  width: 2.2em;
-}
-.toggled button .icon .line:nth-child(1) {
-  transform: translateY(0.6em) rotate(45deg);
-}
-.toggled button .icon .line:nth-child(2) {
-  width: 0;
-  border: 0px solid transparent;
-  border-radius: 0;
-}
-.toggled button .icon .line:nth-child(3) {
-  transform: translateY(-0.6em) rotate(-45deg);
-}
-.toggled .nav ul .link {
-  opacity: 1;
-  transform: scale(1, 1);
-}
+    width: 4%; }
+    @media only screen and (max-width: 512px) {
+      .toggled button {
+        height: 4vw;
+        margin: 1em; } }
+    @media only screen and (min-width: 512px) and (max-width: 1000px) {
+      .toggled button {
+        margin-left: 1.5em; } }
+    .toggled button .icon .line {
+      width: 2.2em; }
+      .toggled button .icon .line:nth-child(1) {
+        transform: translateY(0.6em) rotate(45deg); }
+      .toggled button .icon .line:nth-child(2) {
+        width: 0;
+        border: 0px solid transparent;
+        border-radius: 0; }
+      .toggled button .icon .line:nth-child(3) {
+        transform: translateY(-0.6em) rotate(-45deg); }
+  .toggled .nav ul .link {
+    opacity: 1;
+    transform: scale(1, 1); }
 
 .top {
   width: 96%;
@@ -238,14 +189,11 @@ button .icon .line:nth-child(3) {
   background-size: cover;
   background-repeat: no-repeat;
   border: 0px solid transparent;
-  border-radius: 0;
-}
-@media only screen and (max-width: 512px) {
-  .top {
-    margin-left: 0;
-    width: 100%;
-  }
-}
+  border-radius: 0; }
+  @media only screen and (max-width: 512px) {
+    .top {
+      margin-left: 0;
+      width: 100%; } }
 
 .lgbg {
   position: absolute;
@@ -256,13 +204,10 @@ button .icon .line:nth-child(3) {
   background-image: url("../assets/ggbridge1.jpg");
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-}
-@media only screen and (max-width: 512px) {
-  .lgbg {
-    background-position: 80%;
-  }
-}
+  background-repeat: no-repeat; }
+  @media only screen and (max-width: 512px) {
+    .lgbg {
+      background-position: 80%; } }
 
 footer {
   border: 0px solid transparent;
@@ -273,53 +218,39 @@ footer {
   background-image: url("");
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-}
-@media only screen and (max-width: 512px) {
-  footer {
-    width: 100%;
-    margin: 0;
-  }
-}
-footer .social {
-  float: left;
-  padding: 1em;
-  width: 50%;
-}
-@media only screen and (max-width: 512px) {
+  background-repeat: no-repeat; }
+  @media only screen and (max-width: 512px) {
+    footer {
+      width: 100%;
+      margin: 0; } }
   footer .social {
-    width: 100%;
-    text-align: center;
-    padding: 1em 0;
-  }
-}
-footer .social a {
-  font-size: 2em;
-  text-decoration: none;
-  color: #ffffff;
-  margin: 1em;
-}
-footer .social a:hover {
-  opacity: 0.8;
-}
-footer .contact {
-  padding: 3.5em;
-}
-@media only screen and (max-width: 512px) {
+    float: left;
+    padding: 1em;
+    width: 50%; }
+    @media only screen and (max-width: 512px) {
+      footer .social {
+        width: 100%;
+        text-align: center;
+        padding: 1em 0; } }
+    footer .social a {
+      font-size: 2em;
+      text-decoration: none;
+      color: #ffffff;
+      margin: 1em; }
+      footer .social a:hover {
+        opacity: 0.8; }
   footer .contact {
-    text-align: center;
-  }
-}
-footer .contact h3 {
-  font-family: "Wavehaus", sans-serif;
-  color: #ffffff;
-}
-footer .contact h3 a {
-  color: #ffffff;
-}
-footer .contact h3 a:hover {
-  text-decoration: none;
-}
+    padding: 3.5em; }
+    @media only screen and (max-width: 512px) {
+      footer .contact {
+        text-align: center; } }
+    footer .contact h3 {
+      font-family: "Wavehaus", sans-serif;
+      color: #ffffff; }
+      footer .contact h3 a {
+        color: #ffffff; }
+        footer .contact h3 a:hover {
+          text-decoration: none; }
 
 .title {
   color: #ffffff;
@@ -327,14 +258,11 @@ footer .contact h3 a:hover {
   text-transform: uppercase;
   letter-spacing: 1em;
   font-size: 7em;
-  padding: 1em;
-}
-@media only screen and (max-width: 512px) {
-  .title {
-    font-size: 2.5em;
-    padding: 2em 0.5em;
-  }
-}
+  padding: 1em; }
+  @media only screen and (max-width: 512px) {
+    .title {
+      font-size: 2.5em;
+      padding: 2em 0.5em; } }
 
 .pageheader {
   width: 96%;
@@ -343,99 +271,78 @@ footer .contact h3 a:hover {
   background: linear-gradient(to top right, rgba(102, 160, 255, 0.7), #66a1ff);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
-  padding: 1.2em;
-}
-@media only screen and (max-width: 512px) {
-  .pageheader {
-    margin-top: 10%;
-    width: 100%;
-    margin-left: 0;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
-  }
-}
-.pageheader .pagetitle {
-  color: #ffffff;
-  font-family: "Wavehaus", sans-serif;
-  font-size: 2em;
-}
+  padding: 1.2em; }
+  @media only screen and (max-width: 512px) {
+    .pageheader {
+      margin-top: 10%;
+      width: 100%;
+      margin-left: 0;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%); } }
+  .pageheader .pagetitle {
+    color: #ffffff;
+    font-family: "Wavehaus", sans-serif;
+    font-size: 2em; }
 
 .comingsoon {
   color: #66a1ff;
   font-family: "Wavehaus", sans-serif;
   font-size: 3em;
   margin: 0 2em;
-  margin-bottom: 0.5em;
-}
+  margin-bottom: 0.5em; }
 
 .addendum {
   color: #66a1ff;
   font-family: "Wavehaus", sans-serif;
   font-size: 1.5em;
   margin: 0 4em;
-  line-height: 2em;
-}
+  line-height: 2em; }
 
 .greeting {
-  padding: 0 4em;
-}
-@media only screen and (max-width: 512px) {
-  .greeting {
-    padding: 3em;
-  }
-}
-.greeting h1 {
-  color: #66a1ff;
-  font-family: "Wavehaus", sans-serif;
-  font-size: 3em;
-}
-.greeting h3 {
-  font-family: "Wavehaus", sans-serif;
-  line-height: 2em;
-  width: 50%;
-  color: #666666;
-}
-@media only screen and (max-width: 512px) {
+  padding: 0 4em; }
+  @media only screen and (max-width: 512px) {
+    .greeting {
+      padding: 3em; } }
+  .greeting h1 {
+    color: #66a1ff;
+    font-family: "Wavehaus", sans-serif;
+    font-size: 3em; }
   .greeting h3 {
-    width: 100%;
-  }
-}
+    font-family: "Wavehaus", sans-serif;
+    line-height: 2em;
+    width: 50%;
+    color: #666666; }
+    @media only screen and (max-width: 512px) {
+      .greeting h3 {
+        width: 100%; } }
 
 #about {
   margin-top: 0;
-  padding-bottom: 2em;
-}
-#about .overview {
-  font-family: "Wavehaus", sans-serif;
-  color: #666666;
-}
-#about .expoverview {
-  font-family: "Wavehaus", sans-serif;
-  color: #666666;
-  line-height: 2em;
-  font-weight: 600;
-}
-#about .apply {
-  font-family: "Wavehaus", sans-serif;
-  font-weight: bold;
-  font-size: 1.5em;
-}
+  padding-bottom: 2em; }
+  #about .overview {
+    font-family: "Wavehaus", sans-serif;
+    color: #666666; }
+  #about .expoverview {
+    font-family: "Wavehaus", sans-serif;
+    color: #666666;
+    line-height: 2em;
+    font-weight: 600; }
+  #about .apply {
+    font-family: "Wavehaus", sans-serif;
+    font-weight: bold;
+    font-size: 1.5em; }
 
 .noletterspace {
-  letter-spacing: 0;
-}
+  letter-spacing: 0; }
 
 main {
   margin-top: 8em;
   width: 96%;
-  margin-left: 4%;
-}
-@media only screen and (max-width: 512px) {
-  main {
-    margin-left: 0;
-    width: 100%;
-  }
-}
+  margin-left: 4%; }
+  @media only screen and (max-width: 512px) {
+    main {
+      margin-left: 0;
+      width: 100%; } }
 
 .actbuttons .formbutton {
   display: inline-block;
@@ -451,60 +358,44 @@ main {
   text-decoration: none;
   color: #ffffff;
   font-family: "Wavehaus", sans-serif;
-  font-weight: 600;
-}
-.actbuttons .formbutton:hover {
-  opacity: 0.8;
-}
-@media only screen and (max-width: 512px) {
-  .actbuttons .formbutton {
-    position: relative;
-    z-index: 10;
-  }
-}
+  font-weight: 600; }
+  .actbuttons .formbutton:hover {
+    opacity: 0.8; }
+  @media only screen and (max-width: 512px) {
+    .actbuttons .formbutton {
+      position: relative;
+      z-index: 10; } }
 
 .contentsection {
-  padding: 1em 4em;
-}
-@media only screen and (max-width: 512px) {
-  .contentsection {
-    padding: 3em;
-  }
-}
+  padding: 1em 4em; }
+  @media only screen and (max-width: 512px) {
+    .contentsection {
+      padding: 3em; } }
 
 .secttitle {
   color: #66a1ff;
   font-size: 3em;
-  font-family: "Wavehaus", sans-serif;
-}
+  font-family: "Wavehaus", sans-serif; }
 
 .question, .category, .tba {
   font-size: 1.5em;
-  margin: 0.75em 0;
-}
-@media only screen and (max-width: 512px) {
-  .question, .category, .tba {
-    font-size: 1.3em;
-  }
-}
+  margin: 0.75em 0; }
+  @media only screen and (max-width: 512px) {
+    .question, .category, .tba {
+      font-size: 1.3em; } }
 
 .answer {
-  font-size: 1.2em;
-}
-@media only screen and (max-width: 512px) {
-  .answer {
-    font-size: 1em;
-  }
-}
+  font-size: 1.2em; }
+  @media only screen and (max-width: 512px) {
+    .answer {
+      font-size: 1em; } }
 
 .catdes {
-  font-size: 1em;
-}
+  font-size: 1em; }
 
 .answer, .catdes, .tba {
   font-weight: 600;
-  line-height: 2em;
-}
+  line-height: 2em; }
 
 .bandcard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -513,32 +404,27 @@ main {
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  display: flex;
-}
-.bandcard .bandimg {
-  -webkit-box-flex: 1 0 30%;
-  -moz-box-flex: 1 0 30%;
-  -webkit-flex: 1 0 30%;
-  -ms-flex: 1 0 30%;
-  flex: 1 0 30%;
-  padding: 2em;
-  margin: 2em;
-}
-.bandcard .bandinfo {
-  padding: 2em 4em;
-}
-.bandcard .bandinfo .bandname {
-  color: #666666;
-  font-family: "Wavehaus", sans-serif;
-  font-size: 1.2em;
-}
-.bandcard .bandinfo .banddescription {
-  color: #666666;
-  font-family: "Wavehaus", sans-serif;
-  font-weight: 600;
-  font-size: 0.9em;
-  line-height: 2em;
-}
+  display: flex; }
+  .bandcard .bandimg {
+    -webkit-box-flex: 1 0 30%;
+    -moz-box-flex: 1 0 30%;
+    -webkit-flex: 1 0 30%;
+    -ms-flex: 1 0 30%;
+    flex: 1 0 30%;
+    padding: 2em;
+    margin: 2em; }
+  .bandcard .bandinfo {
+    padding: 2em 4em; }
+    .bandcard .bandinfo .bandname {
+      color: #666666;
+      font-family: "Wavehaus", sans-serif;
+      font-size: 1.2em; }
+    .bandcard .bandinfo .banddescription {
+      color: #666666;
+      font-family: "Wavehaus", sans-serif;
+      font-weight: 600;
+      font-size: 0.9em;
+      line-height: 2em; }
 
 .bandcard:nth-child(1) > .bandimg {
   background-color: transparent;
@@ -546,8 +432,7 @@ main {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-size: 100%;
-}
+  background-size: 100%; }
 
 .bandcard:nth-child(2) > .bandimg {
   background-color: transparent;
@@ -555,23 +440,105 @@ main {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-size: 100%;
-}
+  background-size: 100%; }
+
+.bandcard:nth-child(3) > .bandimg {
+  background-color: transparent;
+  background-image: url("../assets/bands/resky.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%; }
 
 .bandsocial a {
   color: #66a1ff;
   text-decoration: none;
   font-size: 2em;
   margin-right: 1.2em;
-  margin-top: 0.5em;
-}
+  margin-top: 0.5em; }
 
 .genericlink {
   color: rgba(102, 160, 255, 0.8);
-  text-decoration: none;
-}
-.genericlink:hover {
-  color: #66a1ff;
-}
+  text-decoration: none; }
+  .genericlink:hover {
+    color: #66a1ff; }
+
+.prizes {
+  list-style-type: none;
+  margin-top: -1em; }
+  .prizes li {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-left: 1em;
+    line-height: 1.4em; }
+
+.internstuff {
+  font-weight: 600;
+  font-size: 1.5em;
+  margin: 1em 0;
+  background: #66a1ff;
+  position: absolute;
+  padding: 10px;
+  color: #ffffff; }
+
+.schedule {
+  margin-top: 2em; }
+
+.artdiv {
+  margin: 1em 3em; }
+
+.artcase, .artsignup {
+  margin: 1em 0;
+  text-shadow: 0 0 0 #ffffff; }
+
+.images {
+  width: 10em;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between; }
+  .images .image {
+    border: 10px solid rgba(102, 160, 255, 0.9);
+    border-radius: 0px;
+    position: relative;
+    margin: 1em;
+    float: left; }
+  .images .image-1 {
+    background-color: transparent;
+    background-image: url("../assets/art1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10em; }
+  .images .image-2 {
+    background-color: transparent;
+    background-image: url("../assets/art2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10em; }
+  .images .image-3 {
+    background-color: transparent;
+    background-image: url("../assets/art3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10em; }
+  .images .image-4 {
+    background-color: transparent;
+    background-image: url("../assets/art4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10em; }
+  .images .image-5 {
+    background-color: transparent;
+    background-image: url("../assets/art5.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10em; }
 
 /*# sourceMappingURL=master.css.map */

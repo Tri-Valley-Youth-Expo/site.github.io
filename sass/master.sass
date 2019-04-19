@@ -366,6 +366,10 @@ main
     +bgbasics('../assets/bands/thesideproject.jpg', transparent)
     background-size: 100%
 
+.bandcard:nth-child(3) > .bandimg
+    +bgbasics('../assets/bands/resky.png', transparent)
+    background-size: 100%
+
 .bandsocial
     a
         color: $blue
@@ -381,3 +385,50 @@ main
     &:hover
         color: $blue
         @extend %qtrans
+
+.prizes
+    list-style-type: none
+    @extend %no-space
+    margin-top: -1em
+    li
+        @extend %no-space
+        @extend %regtext
+        font-size: 1.5em
+        font-weight: 600
+        margin-left: 1em
+        line-height: 1.4em
+
+.internstuff
+    @extend %regtext
+    font-weight: 600
+    font-size: 1.5em
+    margin: 1em 0
+    background: $blue
+    position: absolute
+    padding: 10px
+    color: #ffffff
+
+.schedule
+    margin-top: 2em
+
+.artdiv
+    margin: 1em 3em
+
+.artcase, .artsignup
+    @extend %regtext
+    margin: 1em 0
+    // +bgbasics('', #ffffff)
+    text-shadow: 0 0 0 #ffffff
+
+.images
+    width: 10em
+    +flexbox()
+    justify-content: space-between
+    .image
+        +border(10px solid $transblue1, 0px)
+        position: relative
+        margin: 1em
+        float: left
+    @for $i from 1 through 5
+        .image-#{$i}
+            +imgstuff('../assets/art#{$i}.jpg')
