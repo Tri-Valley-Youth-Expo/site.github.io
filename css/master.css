@@ -17,11 +17,11 @@ button {
   justify-content: center;
   align-items: center; }
 
-.question, .answer, .category, .catdes, .tba, .prizes li, .internstuff, .artcase, .artsignup, .dates, nav, button, button .icon, .nav ul, footer, footer .contact h3, .title, .pageheader .pagetitle, .addendum, .greeting h1, .prizes {
+.question, .answer, .category, .catdes, .tba, .prizes li, .internstuff, .artcase, .artsignup, .dates, .botbdates, nav, button, button .icon, .nav ul, footer, footer .contact h3, .title, .pageheader .pagetitle, .addendum, .greeting h1, .prizes {
   padding: 0;
   margin: 0; }
 
-.question, .answer, .category, .catdes, .tba, .prizes li, .internstuff, .artcase, .artsignup, .dates {
+.question, .answer, .category, .catdes, .tba, .prizes li, .internstuff, .artcase, .artsignup, .dates, .botbdates {
   font-family: "Wavehaus", sans-serif;
   color: #666666; }
 
@@ -734,5 +734,8 @@ main {
 .dates {
   padding: 1em;
   margin-left: 4em; }
+
+.botbdates {
+  font-weight: 600; }
 
 /*# sourceMappingURL=master.css.map */
