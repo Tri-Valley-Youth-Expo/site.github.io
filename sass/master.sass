@@ -1,19 +1,19 @@
 @import palette
 @import base
 // @import trig
-::-webkit-scrollbar 
+::-webkit-scrollbar
     width: 12px
 
 
-::-webkit-scrollbar-track 
+::-webkit-scrollbar-track
     background: $transblue5
 
 
-::-webkit-scrollbar-thumb 
+::-webkit-scrollbar-thumb
     background: rgba(255, 255, 255, 1)
     border: 2px solid $transblue5
     border-radius: 500px
-    
+
 html,
 body
     overflow-x: hidden
@@ -381,6 +381,91 @@ main
         margin-right: 1.2em
         margin-top: 0.5em
 
+.memberrow
+    +flexbox()
+    max-width: 90%
+    float: center
+    margin-left: auto
+    margin-right: auto
+
+.membercard
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+    margin: 4em 3em
+    padding: 1em
+    text-align: center
+    transform: skew(-20deg)
+    .memberimg
+        margin: 2em
+        margin-left: auto
+        margin-right: auto
+        height: 10em
+        width: 8em
+        transform: skew(20deg)
+    .memberinfo
+        padding: 0em 1em
+        transform: skew(20deg)
+        .membername
+            color: #666666
+            font-family: $regfont
+            font-size: 1.2em
+        .memberdescription
+            color: #666666
+            font-family: $regfont
+            font-weight: 600
+            font-size: 0.9em
+            line-height: 2em
+            padding: 0 18px
+            max-height: 0
+            overflow: hidden
+            transition: max-height 0.2s ease-out
+
+.membercard:nth-child(1) > .memberimg
+    +bgbasics('../assets/team/Pictures/Aarush.jpg', transparent)
+    background-size: 100%
+
+.membercard:nth-child(2) > .memberimg
+    +bgbasics('../assets/team/Pictures/Aarush.jpg', transparent)
+    background-size: 100%
+
+.membercard:nth-child(3) > .memberimg
+    +bgbasics('../assets/team/Pictures/Aarush.jpg', transparent)
+    background-size: 100%
+
+.membercard:nth-child(4) > .memberimg
+    +bgbasics('../assets/team/Pictures/Aarush.jpg', transparent)
+    background-size: 100%
+
+.membersocial
+    +flexbox()
+    a
+        color: $blue
+        text-decoration: none
+        font-size: 2em
+        margin-right: 1.2em
+        margin-top: 0.5em
+
+.collapsible
+    color: #474747
+    cursor: pointer
+    max-width: 6em
+    max-height: 2.5em
+    border: 1px solid #474747
+    outline: none
+    font-size: 0.7em
+    display: block
+    margin-left: auto
+    margin-right: auto
+    padding: 0.5em
+
+.active, .collapsible:hover
+    background-color: #ccc
+
+.content
+    padding: 0 18px
+    display: none
+    overflow: hidden
+    background-color: #f1f1f1
+
 .genericlink
     color: $transblue2
     @extend %qtrans
@@ -443,49 +528,49 @@ main
     animation-iteration-count: infinite
 
 +keyframes(flash)
-    0% 
+    0%
         color: rgba(237, 28, 36, 1)
-    4.54% 
+    4.54%
         color: rgba(237, 28, 36, 0.1)
-    9.09% 
+    9.09%
         color: rgba(237, 28, 36, 0.2)
-    13.63% 
+    13.63%
         color: rgba(237, 28, 36, 0.3)
-    18.18% 
+    18.18%
         color: rgba(237, 28, 36, 0.4)
-    22.72% 
+    22.72%
         color: rgba(237, 28, 36, 0.5)
     27.27%
         color: rgba(237, 28, 36, 0.6)
     31.82%
         color: rgba(237, 28, 36, 0.7)
-    36.36% 
+    36.36%
         color: rgba(237, 28, 36, 0.8)
-    40.91% 
+    40.91%
         color: rgba(237, 28, 36, 0.9)
-    45.45% 
+    45.45%
         color: rgba(237, 28, 36, 1)
-    50% 
+    50%
         color: rgba(237, 28, 36, 0.9)
-    54.54% 
+    54.54%
         color: rgba(237, 28, 36, 0.8)
-    59.09% 
+    59.09%
         color: rgba(237, 28, 36, 0.8)
-    63.63% 
+    63.63%
         color: rgba(237, 28, 36, 0.7)
-    68.18% 
+    68.18%
         color: rgba(237, 28, 36, 0.6)
-    72.72% 
+    72.72%
         color: rgba(237, 28, 36, 0.5)
-    77.27% 
+    77.27%
         color: rgba(237, 28, 36, 0.4)
-    81.81% 
+    81.81%
         color: rgba(237, 28, 36, 0.3)
-    86.36% 
+    86.36%
         color: rgba(237, 28, 36, 0.2)
-    90.91% 
+    90.91%
         color: rgba(237, 28, 36, 0.1)
-    100% 
+    100%
         color: rgba(237, 28, 36, 1)
 
 .dates

@@ -38,10 +38,95 @@
             <h2 class="pagetitle">Meet the Team</h2>
         </div>
         <main>
-            <h2 class="comingsoon">
-                Coming soon!
-            </h2>
-            <h5 class="addendum">We'll add more content soon!</h5>
+            <section class="faq contentsection">
+                <h2 class="secttitle">About Us!</h2>
+                <h5 class="question">Our Purpose</h5>
+                <h5 class="answer">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </h5>
+                <h5 class="question">The Team</h5>
+                <h5 class="answer">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </h5>
+                <div class="memberrow">
+                  <div class="membercard">
+                    <div class="memberimg"></div>
+                    <div class="memberinfo">
+                      <h2 class="membername">Aaursh</h2>
+                      <button class="collapsible">About Me</button>
+                      <h3 class="memberdescription">
+                        The Chefs band formed in the beginning of 2017 and holds 6
+                        members, all from Dublin High School. Members of the band consist
+                        of lead singers Matthew Elises and Rohan Fonseka, along with their
+                        lead guitarist Jeetu Sujith.</h3>
+                      <div class="membersocial">
+                        <a
+                          href="https://www.instagram.com/the.chefs.official/"
+                          class="fab fa-instagram"
+                        ></a>
+                        <a href="" class="fab fa-facebook"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="membercard">
+                    <div class="memberimg"></div>
+                    <div class="memberinfo">
+                      <h2 class="membername">Aarush</h2>
+                      <button class="collapsible">About Me</button>
+                      <h3 class="memberdescription">
+                        The Chefs band formed in the beginning of 2017 and holds 6
+                        members, all from Dublin High School. Members of the band consist
+                        of lead singers Matthew Elises and Rohan Fonseka, along with their
+                        lead guitarist Jeetu Sujith.</h3>
+                      <div class="membersocial">
+                        <a
+                          href="https://www.instagram.com/the.chefs.official/"
+                          class="fab fa-instagram"
+                        ></a>
+                        <a href="" class="fab fa-facebook"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="membercard">
+                    <div class="memberimg"></div>
+                    <div class="memberinfo">
+                      <h2 class="membername">Aarush</h2>
+                      <button class="collapsible">About Me</button>
+                      <h3 class="memberdescription">
+                        The Chefs band formed in the beginning of 2017 and holds 6
+                        members, all from Dublin High School. Members of the band consist
+                        of lead singers Matthew Elises and Rohan Fonseka, along with their
+                        lead guitarist Jeetu Sujith.</h3>
+                      <div class="membersocial">
+                        <a
+                          href="https://www.instagram.com/the.chefs.official/"
+                          class="fab fa-instagram"
+                        ></a>
+                        <a href="" class="fab fa-facebook"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="membercard">
+                    <div class="memberimg"></div>
+                    <div class="memberinfo">
+                      <h2 class="membername">Aarush</h2>
+                      <button class="collapsible">About Me</button>
+                      <h3 class="memberdescription">
+                        The Chefs band formed in the beginning of 2017 and holds 6
+                        members, all from Dublin High School. Members of the band consist
+                        of lead singers Matthew Elises and Rohan Fonseka, along with their
+                        lead guitarist Jeetu Sujith.</h3>
+                      <div class="membersocial">
+                        <a
+                          href="https://www.instagram.com/the.chefs.official/"
+                          class="fab fa-instagram"
+                        ></a>
+                        <a href="" class="fab fa-facebook"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </section>
         </main>
     </div>
     <footer>
@@ -54,10 +139,21 @@
             <h3>Contact us at <a href="mailto:info@trivalleyyouthexpo.com">info@trivalleyyouthexpo.com</a></h3>
         </div>
     </footer>
+
     <script>
-        function toggleNav() {
-            $("nav").toggleClass("toggled");
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
         }
+      });
+    }
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
