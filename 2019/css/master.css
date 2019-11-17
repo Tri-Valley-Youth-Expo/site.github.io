@@ -1,0 +1,920 @@
+/* Coolors Exported Palette - coolors.co/ffd951-ff6060-8783d1-6ad8c2-2e5266 */
+/* HSL */
+/* RGB */
+/* Alternate Colors */
+nav, button, .nav ul .link, .nav ul .link a, .nav ul .link a:hover, .toggled, .toggled button, .toggled .nav ul .link, footer .social a, footer .social a:hover, footer .contact h3 a, footer .contact h3 a:hover, .actbuttons .formbutton, .actbuttons .formbutton:hover, .genericlink, .genericlink:hover, .close:hover {
+  -webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+  -moz-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+  -o-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s; }
+
+button {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.question, .answer, .category, .catdes, .tba, .prizes li, .internstuff, .artcase, .artsignup, .dates, .botbdates, nav, button, button .icon, .nav ul, footer, footer .contact h3, .title, .pageheader .pagetitle, .addendum, .greeting h1, .prizes, .moreInfo, .close {
+  padding: 0;
+  margin: 0; }
+
+.question, .answer, .category, .catdes, .tba, .prizes li, .internstuff, .artcase, .artsignup, .dates, .botbdates {
+  font-family: "Wavehaus", sans-serif;
+  color: #666666; }
+
+::-webkit-scrollbar {
+  width: 12px; }
+
+::-webkit-scrollbar-track {
+  background: rgba(102, 160, 255, 0.5); }
+
+::-webkit-scrollbar-thumb {
+  background: white;
+  border: 2px solid rgba(102, 160, 255, 0.5);
+  border-radius: 500px; }
+
+html,
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  scroll-behavior: smooth; }
+
+.Site {
+  flex: 1; }
+
+nav {
+  width: 4%;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+  background-color: #66a1ff;
+  background-image: url("");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 0px solid transparent;
+  border-radius: 0; }
+  @media only screen and (max-width: 512px) {
+    nav {
+      width: 100%;
+      height: 6%; } }
+  @media only screen and (min-width: 512px) and (max-width: 1000px) {
+    nav {
+      width: 8%; } }
+
+button {
+  background-color: transparent;
+  background-image: url("");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 0px solid #ffffff;
+  border-radius: 0;
+  width: 100%;
+  height: 4vw; }
+  button:focus {
+    outline: none; }
+  button:hover {
+    background-color: #66a1ff;
+    background-image: url("");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer; }
+  @media only screen and (max-width: 512px) {
+    button {
+      margin-left: 1em;
+      height: 100%;
+      display: static;
+      justify-content: left;
+      align-items: center; } }
+  @media only screen and (min-width: 512px) and (max-width: 1000px) {
+    button {
+      margin-top: 1.5em; } }
+  button .icon {
+    list-style-type: none; }
+    button .icon .line {
+      height: 0.3em;
+      margin: 0.3em 0;
+      background-color: #ffffff;
+      background-image: url("");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 0px solid transparent;
+      border-radius: 500px; }
+      button .icon .line:nth-child(0) {
+        width: 0.7em; }
+      button .icon .line:nth-child(1) {
+        width: 1.2em; }
+      button .icon .line:nth-child(2) {
+        width: 1.7em; }
+      button .icon .line:nth-child(3) {
+        width: 2.2em; }
+
+.nav {
+  width: 100%;
+  margin: 4em; }
+  @media only screen and (max-width: 512px) {
+    .nav {
+      margin: 4em 1em; } }
+  .nav ul {
+    list-style-type: none; }
+    .nav ul .link {
+      opacity: 0;
+      transform: scale(0, 0);
+      margin: 2em 0; }
+      .nav ul .link a {
+        color: #ffffff;
+        text-decoration: none;
+        font-family: "Wavehaus", sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 2em;
+        padding: 1em; }
+        .nav ul .link a:hover {
+          letter-spacing: 0.1em; }
+        @media only screen and (max-width: 512px) {
+          .nav ul .link a {
+            font-size: 1.5em; } }
+
+.toggled {
+  width: 100%; }
+  @media only screen and (max-width: 512px) {
+    .toggled {
+      height: 100%; } }
+  .toggled button {
+    width: 4%; }
+    @media only screen and (max-width: 512px) {
+      .toggled button {
+        height: 4vw;
+        margin: 1em; } }
+    @media only screen and (min-width: 512px) and (max-width: 1000px) {
+      .toggled button {
+        margin-left: 1.5em; } }
+    .toggled button .icon .line {
+      width: 2.2em; }
+      .toggled button .icon .line:nth-child(1) {
+        transform: translateY(0.6em) rotate(45deg); }
+      .toggled button .icon .line:nth-child(2) {
+        width: 0;
+        border: 0px solid transparent;
+        border-radius: 0; }
+      .toggled button .icon .line:nth-child(3) {
+        transform: translateY(-0.6em) rotate(-45deg); }
+  .toggled .nav ul .link {
+    opacity: 1;
+    transform: scale(1, 1); }
+
+.top {
+  width: 96%;
+  height: 100vh;
+  z-index: 0;
+  top: 0;
+  margin-left: 4%;
+  background-color: rgba(102, 160, 255, 0.6);
+  background-image: url("");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 0px solid transparent;
+  border-radius: 0; }
+  @media only screen and (max-width: 512px) {
+    .top {
+      margin-left: 0;
+      width: 100%; } }
+
+.lgbg {
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  background-color: transparent;
+  background-image: url("../assets/ggbridge1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media only screen and (max-width: 512px) {
+    .lgbg {
+      background-position: 80%; } }
+
+footer {
+  border: 0px solid transparent;
+  border-radius: 0;
+  width: 96%;
+  margin-left: 3.5%;
+  background-color: rgba(102, 160, 255, 0.9);
+  background-image: url("");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media only screen and (max-width: 512px) {
+    footer {
+      width: 100%;
+      margin: 0; } }
+  footer .social {
+    float: left;
+    padding: 1em;
+    width: 50%; }
+    @media only screen and (max-width: 512px) {
+      footer .social {
+        width: 100%;
+        text-align: center;
+        padding: 1em 0; } }
+    footer .social a {
+      font-size: 2em;
+      text-decoration: none;
+      color: #ffffff;
+      margin: 1em; }
+      footer .social a:hover {
+        opacity: 0.8; }
+  footer .contact {
+    padding: 3.5em; }
+    @media only screen and (max-width: 512px) {
+      footer .contact {
+        text-align: center; } }
+    footer .contact h3 {
+      font-family: "Wavehaus", sans-serif;
+      color: #ffffff; }
+      footer .contact h3 a {
+        color: #ffffff; }
+        footer .contact h3 a:hover {
+          text-decoration: none; }
+
+.title {
+  color: #ffffff;
+  font-family: "Wavehaus", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1em;
+  font-size: 7em;
+  padding: 1em; }
+  @media only screen and (max-width: 512px) {
+    .title {
+      font-size: 2.5em;
+      padding: 2em 0.5em; } }
+
+.pageheader {
+  width: 96%;
+  margin-left: 4%;
+  position: fixed;
+  background: linear-gradient(to top right, rgba(102, 160, 255, 0.7), #66a1ff);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
+  padding: 1.2em; }
+  @media only screen and (max-width: 512px) {
+    .pageheader {
+      margin-top: 10%;
+      width: 100%;
+      margin-left: 0;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%); } }
+  .pageheader .pagetitle {
+    color: #ffffff;
+    font-family: "Wavehaus", sans-serif;
+    font-size: 2em; }
+
+.comingsoon {
+  color: #66a1ff;
+  font-family: "Wavehaus", sans-serif;
+  font-size: 3em;
+  margin: 0 2em;
+  margin-bottom: 0.5em; }
+
+.addendum {
+  color: #66a1ff;
+  font-family: "Wavehaus", sans-serif;
+  font-size: 1.5em;
+  margin: 0 4em;
+  line-height: 2em; }
+
+.greeting {
+  padding: 0 4em; }
+  @media only screen and (max-width: 512px) {
+    .greeting {
+      padding: 3em; } }
+  .greeting h1 {
+    color: #66a1ff;
+    font-family: "Wavehaus", sans-serif;
+    font-size: 3em; }
+  .greeting h3 {
+    font-family: "Wavehaus", sans-serif;
+    line-height: 2em;
+    width: 50%;
+    color: #666666; }
+    @media only screen and (max-width: 512px) {
+      .greeting h3 {
+        width: 100%; } }
+
+#about {
+  margin-top: 0;
+  padding-bottom: 2em; }
+  #about .overview {
+    font-family: "Wavehaus", sans-serif;
+    color: #666666; }
+  #about .expoverview {
+    font-family: "Wavehaus", sans-serif;
+    color: #666666;
+    line-height: 2em;
+    font-weight: 600; }
+  #about .apply {
+    font-family: "Wavehaus", sans-serif;
+    font-weight: bold;
+    font-size: 1.5em; }
+  #about #urgent {
+    color: #ED1C24; }
+
+.noletterspace {
+  letter-spacing: 0; }
+
+main {
+  margin-top: 8em;
+  width: 96%;
+  margin-left: 4%; }
+  @media only screen and (max-width: 512px) {
+    main {
+      margin-left: 0;
+      width: 100%; } }
+
+.actbuttons .formbutton {
+  display: inline-block;
+  background-color: #66a1ff;
+  background-image: url("");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 1.2em;
+  text-align: center;
+  margin: 1em 1em 1em 0em;
+  padding: 1em 2em;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Wavehaus", sans-serif;
+  font-weight: 600; }
+  .actbuttons .formbutton:hover {
+    opacity: 0.8; }
+  @media only screen and (max-width: 512px) {
+    .actbuttons .formbutton {
+      position: relative;
+      z-index: 10; } }
+
+.contentsection {
+  padding: 1em 4em; }
+  @media only screen and (max-width: 512px) {
+    .contentsection {
+      padding: 3em; } }
+
+.secttitle {
+  color: #66a1ff;
+  font-size: 3em;
+  font-family: "Wavehaus", sans-serif; }
+
+.question, .category, .tba {
+  font-size: 1.5em;
+  margin: 0.75em 0; }
+  @media only screen and (max-width: 512px) {
+    .question, .category, .tba {
+      font-size: 1.3em; } }
+
+.answer {
+  font-size: 1.2em; }
+  @media only screen and (max-width: 512px) {
+    .answer {
+      font-size: 1em; } }
+
+.catdes {
+  font-size: 1em; }
+
+.answer, .catdes, .tba {
+  font-weight: 600;
+  line-height: 2em; }
+
+.bandcard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 4em 7.5em;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+  .bandcard .bandimg {
+    -webkit-box-flex: 1 0 30%;
+    -moz-box-flex: 1 0 30%;
+    -webkit-flex: 1 0 30%;
+    -ms-flex: 1 0 30%;
+    flex: 1 0 30%;
+    padding: 2em;
+    margin: 2em; }
+  .bandcard .bandinfo {
+    padding: 2em 4em; }
+    .bandcard .bandinfo .bandname {
+      color: #666666;
+      font-family: "Wavehaus", sans-serif;
+      font-size: 1.2em; }
+    .bandcard .bandinfo .banddescription {
+      color: #666666;
+      font-family: "Wavehaus", sans-serif;
+      font-weight: 600;
+      font-size: 0.9em;
+      line-height: 2em; }
+
+.bandcard:nth-child(2) > .bandimg {
+  background-color: transparent;
+  background-image: url("../assets/bands/thechefs.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%; }
+
+.bandcard:nth-child(3) > .bandimg {
+  background-color: transparent;
+  background-image: url("../assets/bands/thesideproject.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%; }
+
+.bandcard:nth-child(4) > .bandimg {
+  background-color: transparent;
+  background-image: url("../assets/bands/resky.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%; }
+
+.bandsocial a {
+  color: #66a1ff;
+  text-decoration: none;
+  font-size: 2em;
+  margin-right: 1.2em;
+  margin-top: 0.5em; }
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1; }
+
+.genericlink {
+  color: rgba(102, 160, 255, 0.8);
+  text-decoration: none; }
+  .genericlink:hover {
+    color: #66a1ff; }
+
+.prizes {
+  list-style-type: none;
+  margin-top: -1em; }
+  .prizes li {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-left: 1em;
+    line-height: 1.4em; }
+
+.internstuff {
+  font-weight: 600;
+  font-size: 1.5em;
+  margin: 1em 0;
+  background: #66a1ff;
+  position: absolute;
+  padding: 10px;
+  color: #ffffff; }
+
+.schedule {
+  margin-top: 2em; }
+
+.artdiv {
+  margin: 1em 3em; }
+
+.artcase, .artsignup {
+  margin: 1em 0;
+  text-shadow: 0 0 0 #ffffff; }
+
+.images {
+  width: 10em;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between; }
+  .images .image {
+    border: 10px solid rgba(102, 160, 255, 0.9);
+    border-radius: 0px;
+    position: relative;
+    margin: 1em;
+    float: left; }
+  .images .image-1 {
+    background-color: transparent;
+    background-image: url("../assets/art1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10em; }
+  .images .image-2 {
+    background-color: transparent;
+    background-image: url("../assets/art2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10em; }
+  .images .image-3 {
+    background-color: transparent;
+    background-image: url("../assets/art3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10em; }
+  .images .image-4 {
+    background-color: transparent;
+    background-image: url("../assets/art4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10em; }
+  .images .image-5 {
+    background-color: transparent;
+    background-image: url("../assets/art5.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10em; }
+
+.red {
+  color: rgba(237, 28, 36, 0.5);
+  text-decoration: none;
+  animation-name: flash;
+  animation-duration: 5s;
+  animation-iteration-count: infinite; }
+
+@-webkit-keyframes flash {
+  0% {
+    color: #ed1c24; }
+  4.54% {
+    color: rgba(237, 28, 36, 0.1); }
+  9.09% {
+    color: rgba(237, 28, 36, 0.2); }
+  13.63% {
+    color: rgba(237, 28, 36, 0.3); }
+  18.18% {
+    color: rgba(237, 28, 36, 0.4); }
+  22.72% {
+    color: rgba(237, 28, 36, 0.5); }
+  27.27% {
+    color: rgba(237, 28, 36, 0.6); }
+  31.82% {
+    color: rgba(237, 28, 36, 0.7); }
+  36.36% {
+    color: rgba(237, 28, 36, 0.8); }
+  40.91% {
+    color: rgba(237, 28, 36, 0.9); }
+  45.45% {
+    color: #ed1c24; }
+  50% {
+    color: rgba(237, 28, 36, 0.9); }
+  54.54% {
+    color: rgba(237, 28, 36, 0.8); }
+  59.09% {
+    color: rgba(237, 28, 36, 0.8); }
+  63.63% {
+    color: rgba(237, 28, 36, 0.7); }
+  68.18% {
+    color: rgba(237, 28, 36, 0.6); }
+  72.72% {
+    color: rgba(237, 28, 36, 0.5); }
+  77.27% {
+    color: rgba(237, 28, 36, 0.4); }
+  81.81% {
+    color: rgba(237, 28, 36, 0.3); }
+  86.36% {
+    color: rgba(237, 28, 36, 0.2); }
+  90.91% {
+    color: rgba(237, 28, 36, 0.1); }
+  100% {
+    color: #ed1c24; } }
+@-moz-keyframes flash {
+  0% {
+    color: #ed1c24; }
+  4.54% {
+    color: rgba(237, 28, 36, 0.1); }
+  9.09% {
+    color: rgba(237, 28, 36, 0.2); }
+  13.63% {
+    color: rgba(237, 28, 36, 0.3); }
+  18.18% {
+    color: rgba(237, 28, 36, 0.4); }
+  22.72% {
+    color: rgba(237, 28, 36, 0.5); }
+  27.27% {
+    color: rgba(237, 28, 36, 0.6); }
+  31.82% {
+    color: rgba(237, 28, 36, 0.7); }
+  36.36% {
+    color: rgba(237, 28, 36, 0.8); }
+  40.91% {
+    color: rgba(237, 28, 36, 0.9); }
+  45.45% {
+    color: #ed1c24; }
+  50% {
+    color: rgba(237, 28, 36, 0.9); }
+  54.54% {
+    color: rgba(237, 28, 36, 0.8); }
+  59.09% {
+    color: rgba(237, 28, 36, 0.8); }
+  63.63% {
+    color: rgba(237, 28, 36, 0.7); }
+  68.18% {
+    color: rgba(237, 28, 36, 0.6); }
+  72.72% {
+    color: rgba(237, 28, 36, 0.5); }
+  77.27% {
+    color: rgba(237, 28, 36, 0.4); }
+  81.81% {
+    color: rgba(237, 28, 36, 0.3); }
+  86.36% {
+    color: rgba(237, 28, 36, 0.2); }
+  90.91% {
+    color: rgba(237, 28, 36, 0.1); }
+  100% {
+    color: #ed1c24; } }
+@-ms-keyframes flash {
+  0% {
+    color: #ed1c24; }
+  4.54% {
+    color: rgba(237, 28, 36, 0.1); }
+  9.09% {
+    color: rgba(237, 28, 36, 0.2); }
+  13.63% {
+    color: rgba(237, 28, 36, 0.3); }
+  18.18% {
+    color: rgba(237, 28, 36, 0.4); }
+  22.72% {
+    color: rgba(237, 28, 36, 0.5); }
+  27.27% {
+    color: rgba(237, 28, 36, 0.6); }
+  31.82% {
+    color: rgba(237, 28, 36, 0.7); }
+  36.36% {
+    color: rgba(237, 28, 36, 0.8); }
+  40.91% {
+    color: rgba(237, 28, 36, 0.9); }
+  45.45% {
+    color: #ed1c24; }
+  50% {
+    color: rgba(237, 28, 36, 0.9); }
+  54.54% {
+    color: rgba(237, 28, 36, 0.8); }
+  59.09% {
+    color: rgba(237, 28, 36, 0.8); }
+  63.63% {
+    color: rgba(237, 28, 36, 0.7); }
+  68.18% {
+    color: rgba(237, 28, 36, 0.6); }
+  72.72% {
+    color: rgba(237, 28, 36, 0.5); }
+  77.27% {
+    color: rgba(237, 28, 36, 0.4); }
+  81.81% {
+    color: rgba(237, 28, 36, 0.3); }
+  86.36% {
+    color: rgba(237, 28, 36, 0.2); }
+  90.91% {
+    color: rgba(237, 28, 36, 0.1); }
+  100% {
+    color: #ed1c24; } }
+@keyframes flash {
+  0% {
+    color: #ed1c24; }
+  4.54% {
+    color: rgba(237, 28, 36, 0.1); }
+  9.09% {
+    color: rgba(237, 28, 36, 0.2); }
+  13.63% {
+    color: rgba(237, 28, 36, 0.3); }
+  18.18% {
+    color: rgba(237, 28, 36, 0.4); }
+  22.72% {
+    color: rgba(237, 28, 36, 0.5); }
+  27.27% {
+    color: rgba(237, 28, 36, 0.6); }
+  31.82% {
+    color: rgba(237, 28, 36, 0.7); }
+  36.36% {
+    color: rgba(237, 28, 36, 0.8); }
+  40.91% {
+    color: rgba(237, 28, 36, 0.9); }
+  45.45% {
+    color: #ed1c24; }
+  50% {
+    color: rgba(237, 28, 36, 0.9); }
+  54.54% {
+    color: rgba(237, 28, 36, 0.8); }
+  59.09% {
+    color: rgba(237, 28, 36, 0.8); }
+  63.63% {
+    color: rgba(237, 28, 36, 0.7); }
+  68.18% {
+    color: rgba(237, 28, 36, 0.6); }
+  72.72% {
+    color: rgba(237, 28, 36, 0.5); }
+  77.27% {
+    color: rgba(237, 28, 36, 0.4); }
+  81.81% {
+    color: rgba(237, 28, 36, 0.3); }
+  86.36% {
+    color: rgba(237, 28, 36, 0.2); }
+  90.91% {
+    color: rgba(237, 28, 36, 0.1); }
+  100% {
+    color: #ed1c24; } }
+.dates {
+  padding: 1em;
+  margin-left: 4em; }
+
+.botbdates {
+  font-weight: 600; }
+
+.members {
+  padding: 2em;
+  margin-left: auto;
+  margin-right: auto; }
+
+.row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.memcard {
+  padding: 3em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 2.7em;
+  transform: skewY(-10deg);
+  border: 5px solid rgba(102, 160, 255, 0.8);
+  border-radius: 0; }
+
+.memcontent {
+  transform: skewY(10deg);
+  color: #666666;
+  font-family: "Wavehaus", sans-serif;
+  font-size: 1em;
+  font-weight: 600; }
+  .memcontent img {
+    width: 128px;
+    position: relative;
+    z-index: -100;
+    border: 5px solid rgba(102, 160, 255, 0.8);
+    border-radius: 500px; }
+
+.memtitle {
+  font-style: italic; }
+
+.memtitle, .memname, .memsocial {
+  width: 100%;
+  text-align: center; }
+
+.memsocial > a {
+  color: rgba(102, 160, 255, 0.8);
+  margin: 0.5em;
+  font-size: 1.5em;
+  text-decoration: none; }
+
+.moreInfo {
+  font-family: "Wavehaus", sans-serif;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #fff;
+  height: 2em;
+  margin: 1em 0;
+  background-color: rgba(102, 160, 255, 0.8);
+  border: 0px solid transparent;
+  border-radius: 500px; }
+
+.modal {
+  visibility: hidden;
+  display: none;
+  padding: 2em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  z-index: 30;
+  margin: 1em auto;
+  position: relative;
+  width: 30em; }
+
+.modal-title {
+  font-family: "Wavehaus", sans-serif;
+  font-size: 1.2em;
+  width: 90%;
+  position: relative;
+  color: #676767; }
+
+#modal-text {
+  font-family: "Wavehaus", sans-serif;
+  font-size: 1em; }
+
+.modalimg {
+  width: 9em;
+  height: 9em;
+  display: relative;
+  margin-right: 10%;
+  border: 5px solid rgba(102, 160, 255, 0.8);
+  border-radius: 500px; }
+
+.modal-text {
+  font-family: "Wavehaus", sans-serif;
+  font-size: 1em;
+  width: 50%;
+  display: relative;
+  color: #676767; }
+
+.isVisible {
+  visibility: visible !important;
+  display: block !important; }
+
+#modalWrapper {
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 29;
+  position: fixed;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center; }
+
+.close {
+  width: 2em;
+  height: 2em;
+  position: relative;
+  font-family: "Wavehaus", sans-serif;
+  font-size: 1em;
+  border: 0 solid transparent;
+  border-radius: 500px; }
+  .close:hover {
+    background: rgba(0, 0, 0, 0.2); }
+  .close img {
+    width: 24px;
+    height: 24px; }
+
+.container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 5em; }
+
+.sponsorLogo img {
+  width: 7.5em; }
+
+#adjustedLogo {
+  width: 10em;
+  margin: 1.3em 0; }
+
+#colorAdjustedLogo {
+  background: #5ea757;
+  padding: 1em; }
+
+#adjustedLogo2 {
+  width: 20em; }
+
+.eventtime {
+  width: 10em;
+  margin-right: 1em; }
+
+.scheduleContainer {
+  background-color: white; }
+
+.schedulerow {
+  border-bottom: 1px solid #666666; }
+  .schedulerow:last-child {
+    border-bottom: 0px solid transparent; }
+  .schedulerow p {
+    font-family: "Wavehaus", sans-serif;
+    font-size: 1.5em;
+    padding-left: 2em; }
+
+.scheduleContainer {
+  width: 60%;
+  margin-left: 5em;
+  margin-bottom: 5em; }
+
+/*# sourceMappingURL=master.css.map */

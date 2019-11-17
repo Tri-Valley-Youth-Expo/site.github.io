@@ -1,0 +1,131 @@
+$display: 'Canvas'
+$regfont: 'Wavehaus', sans-serif
+
+$break-small: 512px
+$break-medium: 800px
+$break-large: 1000px
+
+=respond-to($media) 
+  @if $media == handhelds 
+    @media only screen and (max-width: $break-small)
+        @content
+  @else if $media == medium-screens 
+    @media only screen and (min-width: $break-small) and (max-width: $break-large)
+        @content
+  @else if $media == wide-screens
+    @media only screen and (min-width: $break-large)
+        @content
+  
+
+
+=flexbox()
+  display: -webkit-box
+  display: -moz-box
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+
+=keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @-ms-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+
+=flex($values) 
+  -webkit-box-flex: $values
+  -moz-box-flex:  $values
+  -webkit-flex:  $values
+  -ms-flex:  $values
+  flex:  $values
+
+=bgbasics($img, $color)
+    background:
+        color: $color
+        image: url($img)
+        position: center
+        size: cover
+        repeat: no-repeat
+
+=vendor-transition($selection, $easing, $duration)
+    -webkit-transition: $selection $easing $duration
+    -moz-transition: $selection $easing $duration
+    -o-transition: $selection $easing $duration
+    transition: $selection $easing $duration
+
+=linear-gradient($selector, $angle, $color1, $color2)
+    $gradient: $angle, $color1, $color2
+    $selector: -moz-linear-gradient($gradient)
+    $selector: -webkit-gradient($gradient)
+    $selector: -webkit-linear-gradient($gradient)
+    $selector: -o-linear-gradient($gradient)
+    $selector: -ms-linear-gradient($gradient)
+
+=vendor-selector($selector, $content)
+    -moz-#{$selector}: $content
+    -webkit-#{$selector}: $content
+    -o-#{$selector}: $content
+    $selector: $content
+
+=vendor-content($selector, $content)
+    $selector: -moz-#{$content}
+    $selector: -webkit-#{$content}
+    $selector: -o-#{$content}
+    $selector: $content
+
+=border($style, $radius)
+    border: $style
+    border-radius: $radius
+
+@function get-tilted-height($angle) 
+  $a: (100% / 1%)
+  $A: (90deg - $angle)
+  $c: ($a / sin($A))
+  $b: sqrt(pow($c, 2) - pow($a, 2))
+
+  @return (abs($b))
+
+=tilted($angle, $color) 
+  $height: get-tilted-height($angle)
+
+  position: relative
+  background-color: $color
+
+  &::before 
+    content: ''
+    padding-top: $height
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 100%
+    background-image: linear-gradient($angle, $color 50%, transparent 50%)
+  
+
+
+%qtrans
+    +vendor-transition(all, cubic-bezier(0.075, 0.82, 0.165, 1), 0.4s)
+    
+%flex-center
+    +flexbox()
+    justify-content: center
+    align-items: center
+
+%lettering
+    color: #ffffff
+    font-weight: lighter
+
+%no-space
+    padding: 0
+    margin: 0
+
+%regtext
+  @extend %no-space
+  font-family: $regfont
+  color: #666666
+
+=imgstuff($img)
+  +bgbasics($img, transparent)
+  padding: 10em

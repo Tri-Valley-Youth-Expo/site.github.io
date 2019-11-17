@@ -1,0 +1,39 @@
+---
+permalink: /battleofthebands
+---
+
+{% include header.html %} {% include nav.html content="bands" %}
+<div class="bands-content">
+  <h1 class="big-boy top">Welcome to Battle of the Bands!</h1>
+  <p class="content-text">
+    The Battle of the Bands is an amazing event where students can showcase their passion for music by performing in front of an enthusiastic audience.
+  </p>
+  <h1 class="small-boy">Where?</h1>
+  <p class="content-text">Emerald Glen Park</p>
+  <h1 class="small-boy">When?</h1>
+  <p class="content-text">2PM - 8PM, June 6</p>
+  <h1 class="big-boy sign-up">Sign Up</h1>
+  <form
+    action="https://formspree.io/mqkkgboj"
+    method="POST"
+    id="sign-up">
+    <label>
+      Representative Email:
+      <input type="email" name="_replyto">
+    </label>
+    <label>
+      Band Members:
+      <input type="text" name="members">
+    </label>
+    <label>
+      Band Name:
+      <input type="text" name="band_name">
+    </label>
+    <label>
+        Band Description:
+        <textarea name="message" cols="50"></textarea>
+      </label>
+    <button type="submit">Sign Up</button>
+  </form>
+</div>
+{% include footer.html %}

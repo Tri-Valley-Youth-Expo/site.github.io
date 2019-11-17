@@ -1,0 +1,672 @@
+@import palette
+@import base
+// @import trig
+::-webkit-scrollbar
+    width: 12px
+
+
+::-webkit-scrollbar-track
+    background: $transblue5
+
+
+::-webkit-scrollbar-thumb
+    background: rgba(255, 255, 255, 1)
+    border: 2px solid $transblue5
+    border-radius: 500px
+
+html,
+body
+    overflow-x: hidden
+    margin: 0
+    padding: 0
+    width: 100vw
+    +flexbox()
+    min-height: 100vh
+    flex-direction: column
+    scroll-behavior: smooth
+
+.Site
+    flex: 1
+
+nav
+    width: 4%
+    height: 100vh
+    position: fixed
+    z-index: 10
+    +bgbasics('', $blue)
+    +border(0px solid transparent, 0)
+    @extend %no-space
+    @extend %qtrans
+    +respond-to(handhelds)
+        width: 100%
+        height: 6%
+    +respond-to(medium-screens)
+        width: 8%
+
+button
+    +bgbasics('', transparent)
+    +border(0px solid #ffffff, 0)
+    @extend %no-space
+    width: 100%
+    height: 4vw
+    @extend %flex-center
+    @extend %qtrans
+    &:focus
+        outline: none
+    &:hover
+        +bgbasics('', $blue)
+        cursor: pointer
+    +respond-to(handhelds)
+        margin-left: 1em
+        height: 100%
+        display: static
+        justify-content: left
+        align-items: center
+    +respond-to(medium-screens)
+        margin-top: 1.5em
+    .icon
+        @extend %no-space
+        list-style-type: none
+        .line
+            height: 0.3em
+            margin: 0.3em 0
+            +bgbasics('', #ffffff)
+            +border(0px solid transparent, 500px)
+            @for $i from 0 through 3
+                &:nth-child(#{$i})
+                    width: 0.7em + ($i * 0.5)
+
+.nav
+    width: 100%
+    margin: 4em
+    +respond-to(handhelds)
+        margin: 4em 1em
+    ul
+        list-style-type: none
+        @extend %no-space
+        .link
+            opacity: 0
+            transform: scale(0, 0)
+            @extend %qtrans
+            margin: 2em 0
+            a
+                color: #ffffff
+                text-decoration: none
+                font-family: $regfont
+                text-transform: uppercase
+                font-weight: bold
+                font-size: 2em
+                padding: 1em
+                @extend %qtrans
+                &:hover
+                    @extend %qtrans
+                    letter-spacing: 0.1em
+                +respond-to(handhelds)
+                    font-size: 1.5em
+
+.toggled
+    width: 100%
+    @extend %qtrans
+    +respond-to(handhelds)
+        height: 100%
+    button
+        width: 4%
+        +respond-to(handhelds)
+            height: 4vw
+            margin: 1em
+        +respond-to(medium-screens)
+            margin-left: 1.5em
+        @extend %qtrans
+        .icon
+            .line
+                width: 2.2em
+                &:nth-child(1)
+                    transform: translateY(0.6em) rotate(45deg)
+                &:nth-child(2)
+                    width: 0
+                    +border(0px solid transparent, 0)
+                &:nth-child(3)
+                    transform: translateY(-0.6em) rotate(-45deg)
+    .nav
+        ul
+            .link
+                opacity: 1
+                transform: scale(1, 1)
+                @extend %qtrans
+
+.top
+    width: 96%
+    height: 100vh
+    z-index: 0
+    top: 0
+    margin-left: 4%
+    +bgbasics('', $transblue4)
+    +border(0px solid transparent, 0)
+    +respond-to(handhelds)
+        margin-left: 0
+        width: 100%
+
+.lgbg
+    position: absolute
+    z-index: -1
+    height: 100vh
+    width: 100vw
+    +bgbasics('../assets/ggbridge1.jpg', transparent)
+    +respond-to(handhelds)
+        background-position: 80%
+
+footer
+    +border(0px solid transparent, 0)
+    @extend %no-space
+    width: 96%
+    margin-left: 3.5%
+    +bgbasics('', $transblue1)
+    +respond-to(handhelds)
+        width: 100%
+        margin: 0
+    .social
+        float: left
+        padding: 1em
+        width: 50%
+        +respond-to(handhelds)
+            width: 100%
+            text-align: center
+            padding: 1em 0
+        a
+            font-size: 2em
+            text-decoration: none
+            color: #ffffff
+            @extend %qtrans
+            margin: 1em
+            &:hover
+                opacity: 0.8
+                @extend %qtrans
+    .contact
+        padding: 3.5em
+        +respond-to(handhelds)
+            text-align: center
+        h3
+            font-family: $regfont
+            color: #ffffff
+            @extend %no-space
+            a
+                color: #ffffff
+                @extend %qtrans
+                &:hover
+                    text-decoration: none
+                    @extend %qtrans
+
+.title
+    @extend %no-space
+    color: #ffffff
+    font-family: $regfont
+    text-transform: uppercase
+    letter-spacing: 1em
+    font-size: 7em
+    padding: 1em
+    +respond-to(handhelds)
+        font-size: 2.5em
+        padding: 2em 0.5em
+
+.pageheader
+    width: 96%
+    margin-left: 4%
+    position: fixed
+    background: linear-gradient(to top right, $transblue3, $blue)
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%)
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%)
+    padding: 1.2em
+    +respond-to(handhelds)
+        margin-top: 10%
+        width: 100%
+        margin-left: 0
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%)
+        clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%)
+    .pagetitle
+        @extend %no-space
+        color: #ffffff
+        font-family: $regfont
+        font-size: 2em
+
+.comingsoon
+    color: $blue
+    font-family: $regfont
+    font-size: 3em
+    margin: 0 2em
+    margin-bottom: 0.5em
+.addendum
+    color: $blue
+    font-family: $regfont
+    font-size: 1.5em
+    @extend %no-space
+    margin: 0 4em
+    line-height: 2em
+
+.greeting
+    padding: 0 4em
+    +respond-to(handhelds)
+        padding: 3em
+    h1
+        @extend %no-space
+        color: $blue
+        font-family: $regfont
+        font-size: 3em
+    h3
+        font-family: $regfont
+        line-height: 2em
+        width: 50%
+        color: #666666
+        +respond-to(handhelds)
+            width: 100%
+
+#about
+    margin-top: 0
+    padding-bottom: 2em
+    .overview
+        font-family: $regfont
+        color: #666666
+    .expoverview
+        font-family: $regfont
+        color: #666666
+        line-height: 2em
+        font-weight: 600
+    .apply
+        font-family: $regfont
+        font-weight: bold
+        font-size: 1.5em
+    #urgent
+        color: #ED1C24
+
+.noletterspace
+    letter-spacing: 0
+
+main
+    margin-top: 8em
+    width: 96%
+    margin-left: 4%
+    +respond-to(handhelds)
+        margin-left: 0
+        width: 100%
+
+.actbuttons
+    .formbutton
+        display: inline-block
+        +bgbasics('', $blue)
+        @extend %qtrans
+        font-size: 1.2em
+        text-align: center
+        margin: 1em 1em 1em 0em
+        padding: 1em 2em
+        text-decoration: none
+        color: #ffffff
+        font-family: $regfont
+        font-weight: 600
+        &:hover
+            opacity: 0.8
+            @extend %qtrans
+        +respond-to(handhelds)
+            position: relative
+            z-index: 10
+
+.contentsection
+    padding: 1em 4em
+    +respond-to(handhelds)
+        padding: 3em
+
+.secttitle
+    color: $blue
+    font-size: 3em
+    font-family: $regfont
+
+.question, .category, .tba
+    font-size: 1.5em
+    margin: 0.75em 0
+    +respond-to(handhelds)
+        font-size: 1.3em
+
+
+.answer
+    font-size: 1.2em
+    +respond-to(handhelds)
+        font-size: 1em
+
+.catdes
+    font-size: 1em
+
+.answer, .catdes, .tba
+    font-weight: 600
+    line-height: 2em
+
+.question, .answer, .category, .catdes, .tba
+    @extend %regtext
+
+.bandcard
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+    margin: 4em 7.5em
+    +flexbox()
+    .bandimg
+        +flex(1 0 30%)
+        padding: 2em
+        margin: 2em
+    .bandinfo
+        padding: 2em 4em
+        .bandname
+            color: #666666
+            font-family: $regfont
+            font-size: 1.2em
+        .banddescription
+            color: #666666
+            font-family: $regfont
+            font-weight: 600
+            font-size: 0.9em
+            line-height: 2em
+
+.bandcard:nth-child(2) > .bandimg
+    +bgbasics('../assets/bands/thechefs.jpg', transparent)
+    background-size: 100%
+
+.bandcard:nth-child(3) > .bandimg
+    +bgbasics('../assets/bands/thesideproject.jpg', transparent)
+    background-size: 100%
+
+.bandcard:nth-child(4) > .bandimg
+    +bgbasics('../assets/bands/resky.png', transparent)
+    background-size: 100%
+
+.bandsocial
+    a
+        color: $blue
+        text-decoration: none
+        font-size: 2em
+        margin-right: 1.2em
+        margin-top: 0.5em
+
+.content
+    padding: 0 18px
+    display: none
+    overflow: hidden
+    background-color: #f1f1f1
+
+.genericlink
+    color: $transblue2
+    @extend %qtrans
+    text-decoration: none
+    &:hover
+        color: $blue
+        @extend %qtrans
+
+.prizes
+    list-style-type: none
+    @extend %no-space
+    margin-top: -1em
+    li
+        @extend %no-space
+        @extend %regtext
+        font-size: 1.5em
+        font-weight: 600
+        margin-left: 1em
+        line-height: 1.4em
+
+.internstuff
+    @extend %regtext
+    font-weight: 600
+    font-size: 1.5em
+    margin: 1em 0
+    background: $blue
+    position: absolute
+    padding: 10px
+    color: #ffffff
+
+.schedule
+    margin-top: 2em
+
+.artdiv
+    margin: 1em 3em
+
+.artcase, .artsignup
+    @extend %regtext
+    margin: 1em 0
+    text-shadow: 0 0 0 #ffffff
+
+.images
+    width: 10em
+    +flexbox()
+    justify-content: space-between
+    .image
+        +border(10px solid $transblue1, 0px)
+        position: relative
+        margin: 1em
+        float: left
+    @for $i from 1 through 5
+        .image-#{$i}
+            +imgstuff('../assets/art#{$i}.jpg')
+
+.red
+    color: rgba(237, 28, 36, 0.5)
+    text-decoration: none
+    animation-name: flash
+    animation-duration: 5s
+    animation-iteration-count: infinite
+
++keyframes(flash)
+    0%
+        color: rgba(237, 28, 36, 1)
+    4.54%
+        color: rgba(237, 28, 36, 0.1)
+    9.09%
+        color: rgba(237, 28, 36, 0.2)
+    13.63%
+        color: rgba(237, 28, 36, 0.3)
+    18.18%
+        color: rgba(237, 28, 36, 0.4)
+    22.72%
+        color: rgba(237, 28, 36, 0.5)
+    27.27%
+        color: rgba(237, 28, 36, 0.6)
+    31.82%
+        color: rgba(237, 28, 36, 0.7)
+    36.36%
+        color: rgba(237, 28, 36, 0.8)
+    40.91%
+        color: rgba(237, 28, 36, 0.9)
+    45.45%
+        color: rgba(237, 28, 36, 1)
+    50%
+        color: rgba(237, 28, 36, 0.9)
+    54.54%
+        color: rgba(237, 28, 36, 0.8)
+    59.09%
+        color: rgba(237, 28, 36, 0.8)
+    63.63%
+        color: rgba(237, 28, 36, 0.7)
+    68.18%
+        color: rgba(237, 28, 36, 0.6)
+    72.72%
+        color: rgba(237, 28, 36, 0.5)
+    77.27%
+        color: rgba(237, 28, 36, 0.4)
+    81.81%
+        color: rgba(237, 28, 36, 0.3)
+    86.36%
+        color: rgba(237, 28, 36, 0.2)
+    90.91%
+        color: rgba(237, 28, 36, 0.1)
+    100%
+        color: rgba(237, 28, 36, 1)
+
+.dates
+    padding: 1em
+    margin-left: 4em
+    @extend %regtext
+
+.botbdates
+    @extend %regtext
+    font-weight: 600
+
+.members
+    padding: 2em
+    margin-left: auto
+    margin-right: auto
+    
+.row
+    +flexbox()
+    flex-direction: row
+    flex-wrap: wrap
+
+.memcard
+    padding: 3em
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+    margin: 2.7em
+    transform: skewY(-10deg)
+    +border(5px solid $transblue2, 0)
+    
+.memcontent
+    transform: skewY(10deg)
+    color: #666666
+    font-family: $regfont
+    font-size: 1em
+    font-weight: 600
+    img
+        width: 128px
+        position: relative
+        z-index: -100
+        +border(5px solid $transblue2, 500px)
+
+.memtitle
+    font-style: italic
+
+.memtitle, .memname, .memsocial
+    width: 100%
+    text-align: center
+    
+.memsocial > a
+    color: $transblue2
+    margin: 0.5em
+    font-size: 1.5em
+    text-decoration: none
+
+.moreInfo
+    font-family: $regfont
+    font-size: 0.8em
+    font-weight: 600
+    color: #fff
+    height: 2em
+    margin: 1em 0
+    @extend %no-space
+    background-color: $transblue2
+    +border(0px solid transparent, 500px)
+
+.modal 
+    visibility: hidden
+    display: none
+    padding: 2em
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+    background-color: white
+    z-index: 30
+    margin: 1em auto
+    position: relative
+    width: 30em    
+
+
+.modal-title
+    font-family: $regfont
+    font-size: 1.2em
+    width: 90%
+    position: relative
+    color: #676767
+
+#modal-text
+    font-family: $regfont
+    font-size: 1em
+
+.modalimg
+    width: 9em
+    height: 9em
+    display: relative
+    margin-right: 10%
+    +border(5px solid $transblue2, 500px)
+
+.modal-text
+    font-family: $regfont
+    font-size: 1em     
+    width: 50%
+    display: relative
+    color: #676767
+
+.isVisible
+    visibility: visible !important
+    display: block !important
+
+#modalWrapper
+    background: rgba(0, 0, 0, 0.5) 
+    z-index: 29
+    position: fixed
+    display: none
+    width: 100vw
+    height: 100vh
+    position: fixed
+    top: 0
+    left: 0
+    align-items: center
+
+.close
+    width: 2em
+    height: 2em
+    position: relative
+    // padding: 1em
+    @extend %no-space
+    font-family: $regfont
+    font-size: 1em
+    +border(0 solid transparent, 500px)
+    &:hover
+        background: rgba(0, 0, 0, 0.2)
+        @extend %qtrans
+    img
+        width: 24px
+        height: 24px    
+
+.container
+    +flexbox()
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: flex-start
+    margin-top: 5em
+
+.sponsorLogo
+    img
+        width: 7.5em
+
+#adjustedLogo
+    width: 10em
+    margin: 1.3em 0
+
+#colorAdjustedLogo
+    background: #5ea757
+    padding: 1em
+
+#adjustedLogo2
+    width: 20em
+
+        
+.eventtime
+    width: 10em
+    margin-right: 1em
+
+.scheduleContainer
+    //box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+    background-color: white
+
+.schedulerow
+    border-bottom: 1px solid #666666
+    &:last-child
+        border-bottom: 0px solid transparent
+    p
+        font-family: $regfont
+        font-size: 1.5em
+        padding-left: 2em
+
+.scheduleContainer
+    width: 60%
+    margin-left: 5em
+    margin-bottom: 5em
