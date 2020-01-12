@@ -19,15 +19,15 @@
     {% else %}
     <li class="navlink"><a href="/expohacksiii">Expo Hacks III</a></li>
     {% endif %}
-    {% if include.content == "team" %}
-    <li class="navlink"><a class="active" href="/meettheteam">Meet the Team</a></li>
-    {% else %}
-    <li class="navlink"><a href="/meettheteam">Meet the Team</a></li>
-    {% endif %}
     {% if include.content == "sponsors" %}
     <li class="navlink"><a class="active" href="/sponsors">Sponsors</a></li>
     {% else %}
     <li class="navlink"><a href="/sponsors">Sponsors</a></li>
+    {% endif %}
+    {% if include.content == "team" %}
+    <li class="navlink"><a class="active" href="/meettheteam">Meet the Team</a></li>
+    {% else %}
+    <li class="navlink"><a href="/meettheteam">Meet the Team</a></li>
     {% endif %}
   </ul>
 </nav>
