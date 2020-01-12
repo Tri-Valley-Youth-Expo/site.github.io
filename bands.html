@@ -3,33 +3,46 @@ permalink: /battleofthebands
 ---
 
 {% include header.html %} {% include nav.html content="bands" %}
+<img src="assets/images/blob2.svg" id="back" />
+<img src="assets/images/blob.png" id="back2" />
 <div class="bands-content">
-  <h1 class="big-boy top">Welcome to Battle of the Bands!</h1>
-  <p class="content-text">
-    The Battle of the Bands is an amazing event where students can showcase their passion for music by performing in front of an enthusiastic audience.
-  </p>
-  <h1 class="small-boy">Where?</h1>
-  <p class="content-text">Emerald Glen Park</p>
-  <h1 class="small-boy">When?</h1>
-  <p class="content-text">2PM - 8PM, June 6</p>
-  <h1 class="big-boy sign-up">Sign Up</h1>
-  <form
-    action="https://formspree.io/mqkkgboj"
-    method="POST"
-    id="sign-up">
+  <div id="row">
+    <div>
+      <h1 class="big-boy top">Welcome to Battle of the Bands!</h1>
+      <p class="content-text">
+        The Battle of the Bands is an amazing event where students can showcase
+        their passion for music by performing in front of an enthusiastic
+        audience.
+      </p>
+      <h1 class="small-boy">Where?</h1>
+      <p class="content-text">Emerald Glen Park</p>
+      <h1 class="small-boy">When?</h1>
+      <p class="content-text">2PM - 8PM, June 6</p>
+    </div>
+    <h1 class="big-boy sign-up">Sign Up</h1>
+  <form action="https://formspree.io/mqkkgboj" method="POST" id="sign-up">
     <label>
-      <input type="email" name="_replyto" placeholder="Representative Email">
+      <input
+        type="email"
+        name="_replyto"
+        placeholder="Representative Email"
+      />
     </label>
     <label>
-      <input type="text" name="members" placeholder="Members">
+      <input type="text" name="members" placeholder="Members" />
     </label>
     <label>
-      <input type="text" name="band_name" placeholder="Band Name">
+      <input type="text" name="band_name" placeholder="Band Name" />
     </label>
     <label>
-        <textarea name="message" cols="50" placeholder="Band Description"></textarea>
-      </label>
+      <textarea
+        name="message"
+        cols="50"
+        placeholder="Band Description"
+      ></textarea>
+    </label>
     <button type="submit">Sign Up</button>
   </form>
+  </div>
 </div>
 {% include footer.html %}
