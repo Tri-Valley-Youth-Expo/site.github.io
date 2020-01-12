@@ -140,6 +140,8 @@ body
             font-size: 1.5em
             margin-top: 60%
             margin-bottom: 20%
+        +respond-to(medium-screens)
+            font-size: 1.3em
     .hack
         font-family: monospace
         @extend %ns
@@ -147,6 +149,8 @@ body
             font-size: 1.5em
             margin-top: 40%
             margin-bottom: 20%
+        +respond-to(medium-screens)
+            font-size: 1.3em
 
 .info
     background: #ffffff
@@ -156,13 +160,20 @@ body
     +respond-to(handhelds)
         background: #efefef
         width: 120%
-        margin-left: -15% 
+        margin-left: -15%
+
+.bands
+    +respond-to(medium-screens)
+        width: 91%
+        margin-left: -2%
 
 .details
     font-family: $reg
     font-size: 0.8em
     color: $primary
     @extend %ns
+    +respond-to(medium-screens)
+        font-size: 0.7em
 
 #openletter
     padding: 4em
