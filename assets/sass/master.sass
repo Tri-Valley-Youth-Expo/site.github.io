@@ -370,11 +370,9 @@ body
     display: flex
     z-index: 2
     +respond-to(medium-screens)
-        text-align: center
         padding: 16%
         padding-top: 8%
     +respond-to(handhelds)
-        text-align: center
         padding: 16%
     div
         z-index: 1
@@ -430,11 +428,10 @@ body
 /*=======Battle of the Bands=======*/
 .bands-content
     +respond-to(handhelds)
-        text-align: center
-        margin-right: 0
+        margin: 7%
+        margin-top: -7%
     +respond-to(medium-screens)
         margin: 5%
-        text-align: center
     .big-boy
         font-family: $reg
         color: #66a1ff
@@ -442,9 +439,7 @@ body
         margin-top: 2em
         margin-left: 10%
         +respond-to(handhelds)
-            margin-left: 0%
         +respond-to(medium-screens)
-            margin-left: 0%
     .top
         margin-top: 4em
     .sign-up
@@ -455,10 +450,6 @@ body
         font-size: 1.5em
         margin-top: 1em
         margin-left: 10%
-        +respond-to(handhelds)
-            margin-left: 0%
-        +respond-to(medium-screens)
-            margin-left: 0%
     .content-text
         font-family: $reg
         color: white
@@ -470,10 +461,6 @@ body
         +flexbox()
         flex-direction: column
         margin-left: 10%
-        +respond-to(handhelds)
-            margin-left: 0%
-        +respond-to(medium-screens)
-            margin-left: 0%
         label
             font-family: $reg
             color: white
@@ -530,13 +517,11 @@ body
             +respond-to(handhelds)
                 width: 40%
                 padding: 5%
-                margin: auto
                 margin-top: 20%
                 margin-bottom: 20%
             +respond-to(medium-screens)
                 width: 20%
                 padding: 3%
-                margin: auto
                 margin-top: 10%
                 margin-bottom: 5%
         button
@@ -569,7 +554,7 @@ body
         border-radius: 10px
         +respond-to(handhelds)
             width: 100%
-            margin-top: 20%
+            margin-top: 5%
         +respond-to(medium-screens)
             margin: 2%
             width: 15%
