@@ -31,3 +31,51 @@
     {% endif %}
   </ul>
 </nav>
+
+<div id="mobile-nav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <ul class="links">
+      {% if include.content == "" %}
+      <li class="navlink"><a class="active" href="/">Home</a></li>
+      {% else %}
+      <li class="navlink"><a href="/">Home</a></li>
+      {% endif %}
+      {% if include.content == "bands" %}
+      <li class="navlink">
+         <a class="active" href="/battleofthebands">Battle of the Bands</a>
+      </li>
+      {% else %}
+      <li class="navlink">
+        <a href="/battleofthebands">Battle of the Bands</a>
+      </li>
+      {% endif %}
+      {% if include.content == "hacks" %}
+      <li class="navlink"><a class="active" href="/expohacksiii">Expo Hacks III</a></li>
+      {% else %}
+      <li class="navlink"><a href="/expohacksiii">Expo Hacks III</a></li>
+      {% endif %}
+      {% if include.content == "sponsors" %}
+      <li class="navlink"><a class="active" href="/sponsors">Sponsors</a></li>
+      {% else %}
+      <li class="navlink"><a href="/sponsors">Sponsors</a></li>
+      {% endif %}
+      {% if include.content == "team" %}
+      <li class="navlink"><a class="active" href="/meettheteam">Meet the Team</a></li>
+      {% else %}
+      <li class="navlink"><a href="/meettheteam">Meet the Team</a></li>
+      {% endif %}
+    </ul>
+  </div>
+</div>
+<span id="burger" style="cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<script>
+  function openNav() {
+    document.getElementById("mobile-nav").style.width = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("mobile-nav").style.width = "0%";
+  }
+</script>

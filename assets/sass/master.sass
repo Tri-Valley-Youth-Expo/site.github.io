@@ -14,12 +14,63 @@ body
     background-color: #292929
     @extend %ns
 
+#mobile-nav
+    display: none
+    +respond-to(handhelds)
+        display: block
+
+.overlay
+    height: 100%
+    width: 0
+    position: fixed
+    z-index: 10
+    top: 0
+    left: 0
+    background-color: rgb(0,0,0)
+    background-color: rgba(0,0,0, 1)
+    overflow-x: hidden
+    transition: 0.5s
+
+.overlay-content
+    position: relative
+    top: 10%
+    margin-left: -10%
+    text-align: center
+
+.overlay a
+    text-decoration: none
+    font-size: 180%
+    color: #818181
+    display: block
+    transition: 0.3s
+
+.overlay a:hover, .overlay a:focus
+    color: #f1f1f1
+
+.overlay .closebtn 
+    position: absolute
+    top: 20px
+    right: 45px
+    font-size: 40px
+    color: white
+
+#burger
+    color: white
+    font-size: 2em
+    margin: 5%
+    position: fixed
+    display: none
+    +respond-to(handhelds)
+        display: block
+
 #nav
     position: fixed
     z-index: 24
     width: 100%
     background: #474747
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+    +respond-to(handhelds)
+        display: none
     @extend %ns
     +flexbox()
     @extend %flex-center
@@ -47,7 +98,6 @@ body
     font-size: 1.2em
     +respond-to(handhelds)
         font-size: 0.9em
-        padding: 0.8em
     // margin: 0 1em
     // +border(1px solid red, 0)
 
@@ -102,6 +152,7 @@ body
         width: 100%
         text-align: center
         height: 200%
+        margin-top: -15%
     &::after
         content: ""
         position: absolute
@@ -119,11 +170,12 @@ body
         background-repeat: no-repeat
         // background-image: url('../images/undraw_compose_music_ovo2.svg')
     &:nth-child(2)
-        background-image: url('https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80')
+        background-image: url('https://images.unsplash.com/photo-1558742569-fe6d39d05837?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60')
         // background-image: url('../images/undraw_programmer_imem.svg')
         background-size: 100%
         background-repeat: no-repeat
         background-position: center
+        +respond-to(handhelds)
 
 .eventcontent
     position: relative
@@ -138,8 +190,8 @@ body
         @extend %ns
         +respond-to(handhelds)
             font-size: 1.5em
-            margin-top: 60%
-            margin-bottom: 20%
+            padding-top: 60%
+            padding-bottom: 30%
         +respond-to(medium-screens)
             font-size: 1.3em
     .hack
@@ -147,8 +199,8 @@ body
         @extend %ns
         +respond-to(handhelds)
             font-size: 1.5em
-            margin-top: 40%
-            margin-bottom: 20%
+            margin-top: 50%
+            padding-bottom: 30%
         +respond-to(medium-screens)
             font-size: 1.3em
 
@@ -166,6 +218,8 @@ body
     +respond-to(medium-screens)
         width: 91%
         margin-left: -2%
+    +respond-to(handhelds)
+        margin-bottom: 20%
 
 .details
     font-family: $reg
