@@ -512,75 +512,33 @@ body
         line-height: 2em
         margin-left: 10%
         margin-right: 10%
-    form
-        +flexbox()
-        flex-direction: column
+    button
+        border: none
+        color: white
+        padding: 2%
+        font-size: 1.5em
+        background-color: #66a1ff
+        font-family: $reg
+        margin: 5%
         margin-left: 10%
-        label
-            font-family: $reg
-            color: white
-            font-size: 1.5em
-            margin-top: 4em
-            background-color: none
-            input
-                border: none
-                color: white
-                background-color: #292929
-                border-bottom: 2px solid #474747
-                font-size: 1em
-                font-family: $reg
-                width: 60%
-                +respond-to(handhelds)
-                    width: 80%
-                    font-size: 0.8em
-                +respond-to(medium-screens)
-                    width: 70%
-            input:focus
-                transition: 0.5s
-                outline-width: 0
-                border-bottom: 2px solid #66a1ff
-            ::placeholder
-                color: white
-            textarea
-                border: none
-                background-color: #292929
-                border-bottom: 2px solid #474747
-                font-size: 1em
-                font-family: $reg
-                width: 60%
-                color: white
-                +respond-to(handhelds)
-                    width: 80%
-                    font-size: 0.8em
-                +respond-to(medium-screens)
-                    width: 70%
-            textarea:focus
-                transition: 0.5s
-                outline-width: 0
-                border-bottom: 2px solid #66a1ff
-
-        button
-            border: none
-            color: white
-            padding: 2%
-            font-size: 1.5em
-            background-color: #66a1ff
-            font-family: $reg
-            margin: 5%
-            margin-left: 0
-            width: 12%
-            +respond-to(handhelds)
-                width: 40%
-                padding: 5%
-                margin-top: 20%
-                margin-bottom: 20%
-            +respond-to(medium-screens)
-                width: 20%
-                padding: 3%
-                margin-top: 10%
-                margin-bottom: 5%
-        button
-            cursor: pointer
+        width: 10%
+        +respond-to(handhelds)
+            width: 60%
+            padding: 10%
+            margin: auto
+            margin-top: 20%
+            margin-bottom: 20%
+        +respond-to(medium-screens)
+            width: 25%
+            padding: 3%
+            margin: auto
+            margin-top: 10%
+            margin-bottom: 5%
+    button
+        cursor: pointer
+    a
+        color: #66a1ff
+        text-decoration: none
 
 /*=======Meet the Team=======*/
 .content
