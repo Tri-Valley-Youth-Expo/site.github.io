@@ -109,6 +109,11 @@ body
     +respond-to(handhelds)
         display: block
 
+.content2
+    @extend %flex-center
+    +respond-to(handhelds)
+        display: block
+
 .Site
     +flexbox()
     +respond-to(handhelds)
@@ -424,11 +429,21 @@ body
     width: 65%
     display: flex
     z-index: 2
+    .row
+        display: flex
+        width: 100%
+        .left
+            width: 50%
+        .right
+            width: 30%
+            text-align: right
+            margin-right: 0
     +respond-to(medium-screens)
         padding: 16%
         padding-top: 8%
     +respond-to(handhelds)
         padding: 16%
+        padding-top: 14%
     div
         z-index: 1
     .big-boy
@@ -449,14 +464,13 @@ body
         font-family: $reg
         color: white
         font-size: 1.2em
-        text-align: "left"
         line-height: 2em
         z-index: 1
     button
         border: none
         color: white
         padding: 2%
-        font-size: 1.5em
+        font-size: 150%
         background-color: #66a1ff
         font-family: $reg
         margin: 5%
@@ -484,7 +498,7 @@ body
 .bands-content
     +respond-to(handhelds)
         margin: 7%
-        margin-top: -7%
+        margin-top: -14%
     +respond-to(medium-screens)
         margin: 5%
     .big-boy
@@ -516,17 +530,18 @@ body
         border: none
         color: white
         padding: 2%
-        font-size: 1.5em
+        font-size: 150%
         background-color: #66a1ff
         font-family: $reg
         margin: 5%
         margin-left: 10%
         width: 10%
         +respond-to(handhelds)
-            width: 60%
-            padding: 10%
+            width: 50%
+            padding: 8%
             margin: auto
             margin-top: 20%
+            margin-left: 10%
             margin-bottom: 20%
         +respond-to(medium-screens)
             width: 25%
@@ -546,6 +561,15 @@ body
         margin-top: 5%
     +respond-to(medium-screens)
         padding-bottom: 5%
+
+.content2
+    margin-top: -15%
+    padding-bottom: 5%
+    +respond-to(handhelds)
+        margin-top: 0%
+    +respond-to(medium-screens)
+        padding-bottom: 5%
+        margin-top: -5%
 #cards
     +flexbox()
     flex-wrap: wrap
