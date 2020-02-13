@@ -432,11 +432,13 @@ body
     .row
         display: flex
         width: 100%
+        +respond-to(handhelds)
+            font-size: 0.8em
         .left
             width: 50%
-            margin-left: 10%
+            margin-left: 0%
         .right
-            width: 30%
+            width: 50%
             text-align: right
             margin-right: 0
     +respond-to(medium-screens)
@@ -582,8 +584,8 @@ body
     margin-left: 4%
     padding-top: 5%
     +respond-to(handhelds)
-        margin: 5%
-        padding-top: 25%
+        margin: 15%
+        padding-top: 0%
     +respond-to(medium-screens)
         margin-right: 4%
         padding-top: 10%
@@ -597,7 +599,7 @@ body
         border-radius: 10px
         +respond-to(handhelds)
             width: 100%
-            margin-top: 5%
+            margin-top: 20%
         +respond-to(medium-screens)
             margin: 2%
             width: 15%
